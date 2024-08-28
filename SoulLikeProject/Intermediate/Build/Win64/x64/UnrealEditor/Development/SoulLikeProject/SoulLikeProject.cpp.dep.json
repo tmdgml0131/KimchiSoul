@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\kimchisoul\\soullikeproject\\source\\soullikeproject\\soullikeproject.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\kimchisoul\\soullikeproject\\intermediate\\build\\win64\\x64\\soullikeprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\git\\kimchisoul\\soullikeproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\soullikeproject\\definitions.soullikeproject.h",
+            "d:\\git\\kimchisoul\\soullikeproject\\source\\soullikeproject\\soullikeproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

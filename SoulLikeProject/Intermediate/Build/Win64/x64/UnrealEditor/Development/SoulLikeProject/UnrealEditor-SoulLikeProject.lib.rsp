@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SoulLikeProject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\SoulLikeProject.cpp.obj"
+"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Default.rc2.res"
+/OUT:"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\UnrealEditor-SoulLikeProject.lib"

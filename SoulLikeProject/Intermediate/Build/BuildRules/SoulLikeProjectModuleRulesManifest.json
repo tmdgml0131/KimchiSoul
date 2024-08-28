@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\git\\KimchiSoul\\SoulLikeProject\\Source\\SoulLikeProject\\SoulLikeProject.Build.cs",
+		"D:\\git\\KimchiSoul\\SoulLikeProject\\Source\\SoulLikeProject.Target.cs",
+		"D:\\git\\KimchiSoul\\SoulLikeProject\\Source\\SoulLikeProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
