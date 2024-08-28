@@ -11,6 +11,8 @@
     <None Include="..\..\Source\SoulLikeProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\SoulLikeProject.png" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +39,39 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h">
       <Filter>Source\SoulLikeProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\Character">
+      <UniqueIdentifier>{0A6493BB-5CA4-3FD8-BDB2-481F28AB39C2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.cpp">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.h">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.cpp">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.h">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\Controller">
+      <UniqueIdentifier>{00162734-8879-3518-895A-03B7DD64EF9A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Controller\KimchiController.cpp">
+      <Filter>Source\SoulLikeProject\Controller</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiController.h">
+      <Filter>Source\SoulLikeProject\Controller</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\GameMode">
+      <UniqueIdentifier>{317E8FBC-1465-335F-BB32-CDFBD4E7D2A7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.cpp">
+      <Filter>Source\SoulLikeProject\GameMode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.h">
+      <Filter>Source\SoulLikeProject\GameMode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
