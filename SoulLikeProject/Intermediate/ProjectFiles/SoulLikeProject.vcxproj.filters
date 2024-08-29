@@ -61,6 +61,18 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.h">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\Components">
+      <UniqueIdentifier>{6939DD72-37FB-3D7B-AA24-91B198714F28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SoulLikeProject\Components\Input">
+      <UniqueIdentifier>{DD1C6D54-7C0C-37B2-8031-0C0021D86231}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Input\KimchiInputComponent.cpp">
+      <Filter>Source\SoulLikeProject\Components\Input</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Input\KimchiInputComponent.h">
+      <Filter>Source\SoulLikeProject\Components\Input</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\Controller">
       <UniqueIdentifier>{00162734-8879-3518-895A-03B7DD64EF9A}</UniqueIdentifier>
     </Filter>

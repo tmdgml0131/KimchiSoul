@@ -281,11 +281,11 @@
 /I "Editor\SceneDepthPickerMode\Public"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationEditMode\UHT"
 /I "Editor\AnimationEditMode\Public"
-/I "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
-/I "D:\git\KimchiSoul\SoulLikeProject\Source"
 /I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"
 /I "..\Plugins\EnhancedInput\Source"
 /I "..\Plugins\EnhancedInput\Source\EnhancedInput\Public"
+/I "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
+/I "D:\git\KimchiSoul\SoulLikeProject\Source"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"

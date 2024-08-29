@@ -21,7 +21,7 @@ public:
 };
 
 /**
- * 
+ *    
  */
 UCLASS()
 class SOULLIKEPROJECT_API UDataAsset_InputConfig : public UDataAsset
@@ -35,5 +35,5 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
 	TArray<FKimchiInputActionConfig> NativeInputActions;
 
-	UInputAction* FindNativeInputActionByTag(const FGameplayTag& InInputTag);
+	UInputAction* FindNativeInputActionByTag(const FGameplayTag& InInputTag) const;
 };
