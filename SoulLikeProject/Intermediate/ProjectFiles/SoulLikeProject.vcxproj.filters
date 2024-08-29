@@ -31,6 +31,12 @@
     <Filter Include="Source\SoulLikeProject">
       <UniqueIdentifier>{521FB5C9-7724-3EDD-9AB0-4EFB8B855218}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.cpp">
+      <Filter>Source\SoulLikeProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.h">
+      <Filter>Source\SoulLikeProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\SoulLikeProject\SoulLikeProject.Build.cs">
       <Filter>Source\SoulLikeProject</Filter>
     </None>
@@ -63,6 +69,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiController.h">
       <Filter>Source\SoulLikeProject\Controller</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\DataAssets">
+      <UniqueIdentifier>{032FE61F-8CA3-3ACB-8824-855E0C6EFEF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SoulLikeProject\DataAssets\Input">
+      <UniqueIdentifier>{338A8683-E371-395A-8456-68A89506D57D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <Filter>Source\SoulLikeProject\DataAssets\Input</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.h">
+      <Filter>Source\SoulLikeProject\DataAssets\Input</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\GameMode">
       <UniqueIdentifier>{317E8FBC-1465-335F-BB32-CDFBD4E7D2A7}</UniqueIdentifier>

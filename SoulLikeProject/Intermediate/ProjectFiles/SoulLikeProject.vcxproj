@@ -258,6 +258,10 @@
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.h"/>
     <None Include="..\..\Source\SoulLikeProject\SoulLikeProject.Build.cs"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\SoulLikeProject.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -275,6 +279,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiController.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
