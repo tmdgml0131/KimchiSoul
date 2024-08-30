@@ -46,6 +46,36 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h">
       <Filter>Source\SoulLikeProject</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\AnimInstances">
+      <UniqueIdentifier>{508CB8C1-59C4-37B7-AA58-BC2CCAE5DB41}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.h">
+      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.h">
+      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\AnimInstances\KimchiHero">
+      <UniqueIdentifier>{8F4C7319-40E4-3A2C-91DF-A81326BCC047}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.h">
+      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.cpp">
+      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.h">
+      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\Character">
       <UniqueIdentifier>{0A6493BB-5CA4-3FD8-BDB2-481F28AB39C2}</UniqueIdentifier>
     </Filter>

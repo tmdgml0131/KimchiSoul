@@ -71,6 +71,7 @@ void AKimchiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
+	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
 }
 
 void AKimchiCharacter::Input_Move(const FInputActionValue& InputActionValue)
@@ -105,4 +106,9 @@ void AKimchiCharacter::Input_Look(const FInputActionValue& InputActionValue)
 	{
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void AKimchiCharacter::Input_Jump(const FInputActionValue& InputActionValue)
+{
+	Super::Jump();
 }

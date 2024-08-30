@@ -17,7 +17,6 @@ class SOULLIKEPROJECT_API AKimchiCharacter : public AKimchiBaseCharacter
 
 public:
 	AKimchiCharacter();
-
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -41,6 +40,7 @@ private:
 
 	void Input_Move(const FInputActionValue& InputActionValue);
 	void Input_Look(const FInputActionValue& InputActionValue);
+	void Input_Jump(const FInputActionValue& InputActionValue);
 #pragma endregion
 };
 

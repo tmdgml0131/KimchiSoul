@@ -267,6 +267,22 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
