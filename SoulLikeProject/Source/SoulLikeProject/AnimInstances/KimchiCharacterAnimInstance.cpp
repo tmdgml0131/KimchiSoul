@@ -26,4 +26,6 @@ void UKimchiCharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSe
 	GroundSpeed = OwningCharacter->GetVelocity().Size2D();
 	
 	bHasAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
+
+	bIsInAir = OwningCharacter->GetCharacterMovement()->IsFalling();
 }
