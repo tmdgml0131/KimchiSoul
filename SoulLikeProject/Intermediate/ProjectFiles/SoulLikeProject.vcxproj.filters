@@ -46,6 +46,21 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h">
       <Filter>Source\SoulLikeProject</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\AbilitySystem">
+      <UniqueIdentifier>{DD51838C-3E98-39CC-854B-695A61CC0BEA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAbilitySystemComponent.cpp">
+      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAbilitySystemComponent.h">
+      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAttributeSet.cpp">
+      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAttributeSet.h">
+      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\AnimInstances">
       <UniqueIdentifier>{508CB8C1-59C4-37B7-AA58-BC2CCAE5DB41}</UniqueIdentifier>
     </Filter>

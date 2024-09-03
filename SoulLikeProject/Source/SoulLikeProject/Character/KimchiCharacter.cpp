@@ -74,6 +74,16 @@ void AKimchiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
 }
 
+void AKimchiCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if(KimchiAbilitySystemComponent && KimchiAttributeSet)
+	{
+		
+	}
+}
+
 void AKimchiCharacter::Input_Move(const FInputActionValue& InputActionValue)
 {
 	const FVector2D MovementVector = InputActionValue.Get<FVector2D>();

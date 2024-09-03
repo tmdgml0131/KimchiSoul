@@ -284,6 +284,12 @@
 /I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"
 /I "..\Plugins\EnhancedInput\Source"
 /I "..\Plugins\EnhancedInput\Source\EnhancedInput\Public"
+/I "..\Plugins\Runtime\GameplayAbilities\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayAbilities\UHT"
+/I "..\Plugins\Runtime\GameplayAbilities\Source"
+/I "..\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public"
+/I "..\Plugins\Runtime\DataRegistry\Intermediate\Build\Win64\UnrealEditor\Inc\DataRegistry\UHT"
+/I "..\Plugins\Runtime\DataRegistry\Source"
+/I "..\Plugins\Runtime\DataRegistry\Source\DataRegistry\Public"
 /I "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
 /I "D:\git\KimchiSoul\SoulLikeProject\Source"
 /external:W0

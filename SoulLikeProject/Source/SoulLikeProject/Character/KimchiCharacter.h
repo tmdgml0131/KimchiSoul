@@ -20,12 +20,12 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void PossessedBy(AController* NewController) override;
 private:
 	UPROPERTY(EditAnywhere, Category = "Bones")
 	TArray<FName> BonesToHide;
 	
 #pragma region Components
-	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
@@ -34,7 +34,6 @@ private:
 #pragma endregion
 	
 #pragma region Input
-	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))
 	class UDataAsset_InputConfig* InputConfigDataAsset;
 

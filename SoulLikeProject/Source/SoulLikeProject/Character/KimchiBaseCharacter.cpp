@@ -3,6 +3,9 @@
 
 #include "KimchiBaseCharacter.h"
 
+#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/AbilitySystem/KimchiAttributeSet.h"
+
 // Sets default values
 AKimchiBaseCharacter::AKimchiBaseCharacter()
 {
@@ -11,26 +14,23 @@ AKimchiBaseCharacter::AKimchiBaseCharacter()
 	PrimaryActorTick.bStartWithTickEnabled = false;
 
 	GetMesh()->bReceivesDecals = false;
+
+	KimchiAbilitySystemComponent = CreateDefaultSubobject<UKimchiAbilitySystemComponent>(TEXT("KimchiAbilitySystem"));
+	KimchiAttributeSet = CreateDefaultSubobject<UKimchiAttributeSet>(TEXT("KimchiAttributeSet"));
 }
 
-// Called when the game starts or when spawned
-void AKimchiBaseCharacter::BeginPlay()
+UAbilitySystemComponent* AKimchiBaseCharacter::GetAbilitySystemComponent() const
 {
-	Super::BeginPlay();
-	
+	return GetKimchiAbilitySystemComponent();
 }
 
-// Called every frame
-void AKimchiBaseCharacter::Tick(float DeltaTime)
+void AKimchiBaseCharacter::PossessedBy(AController* NewController)
 {
-	Super::Tick(DeltaTime);
+	Super::PossessedBy(NewController);
 
-}
-
-// Called to bind functionality to input
-void AKimchiBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	if(KimchiAbilitySystemComponent)
+	{
+		KimchiAbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 

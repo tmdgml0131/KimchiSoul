@@ -4,26 +4,30 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "AbilitySystemInterface.h"
 #include "KimchiBaseCharacter.generated.h"
 
 UCLASS()
-class SOULLIKEPROJECT_API AKimchiBaseCharacter : public ACharacter
+class SOULLIKEPROJECT_API AKimchiBaseCharacter : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
 	AKimchiBaseCharacter();
-
+	
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const; 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	virtual void PossessedBy(AController* NewController) override;
+	
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
+	class UKimchiAbilitySystemComponent*  KimchiAbilitySystemComponent;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
+	class UKimchiAttributeSet* KimchiAttributeSet;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+public:
+	FORCEINLINE UKimchiAbilitySystemComponent* GetKimchiAbilitySystemComponent() const {return KimchiAbilitySystemComponent;}
+	FORCEINLINE UKimchiAttributeSet* GetKimchiAttributeSet() const {return KimchiAttributeSet;}
 };
