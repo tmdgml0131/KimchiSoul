@@ -1,5 +1,44 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.SoulLikeProject.cpp.obj": [
+			"DataAsset_InputConfig.gen.cpp.obj",
+			"DataAsset_KimchiStartUpData.gen.cpp.obj",
+			"DataAsset_StartUpDataBase.gen.cpp.obj",
+			"KimchiAbilitySystemComponent.gen.cpp.obj",
+			"KimchiAttributeSet.gen.cpp.obj",
+			"KimchiBaseAnimInstance.gen.cpp.obj",
+			"KimchiBaseCharacter.gen.cpp.obj",
+			"KimchiCharacter.gen.cpp.obj",
+			"KimchiCharacterAnimInstance.gen.cpp.obj",
+			"KimchiController.gen.cpp.obj",
+			"KimchiGameModeBase.gen.cpp.obj",
+			"KimchiGameplayAbility.gen.cpp.obj",
+			"KimchiHeroAnimInstance.gen.cpp.obj",
+			"KimchiHeroLinkedLayer.gen.cpp.obj",
+			"KimchiHeroWeapon.gen.cpp.obj",
+			"KimchiInputComponent.gen.cpp.obj",
+			"KimchiWeaponBase.gen.cpp.obj",
+			"SoulLikeProject.init.gen.cpp.obj",
+			"KimchiAbilitySystemComponent.cpp.obj",
+			"KimchiAttributeSet.cpp.obj",
+			"KimchiBaseAnimInstance.cpp.obj",
+			"KimchiCharacterAnimInstance.cpp.obj",
+			"KimchiHeroAnimInstance.cpp.obj",
+			"KimchiHeroLinkedLayer.cpp.obj",
+			"KimchiInputComponent.cpp.obj",
+			"KimchiController.cpp.obj",
+			"DataAsset_InputConfig.cpp.obj",
+			"KimchiGameModeBase.cpp.obj",
+			"KimchiGameplayTags.cpp.obj",
+			"SoulLikeProject.cpp.obj",
+			"KimchiGameplayAbility.cpp.obj",
+			"KimchiBaseCharacter.cpp.obj",
+			"KimchiCharacter.cpp.obj",
+			"DataAsset_KimchiStartUpData.cpp.obj",
+			"DataAsset_StartUpDataBase.cpp.obj",
+			"KimchiHeroWeapon.cpp.obj",
+			"KimchiWeaponBase.cpp.obj"
+		]
 	}
 }

@@ -7,6 +7,8 @@
 #include "AbilitySystemInterface.h"
 #include "KimchiBaseCharacter.generated.h"
 
+class UDataAsset_StartUpDataBase;
+
 UCLASS()
 class SOULLIKEPROJECT_API AKimchiBaseCharacter : public ACharacter, public IAbilitySystemInterface
 {
@@ -20,13 +22,15 @@ public:
 protected:
 	virtual void PossessedBy(AController* NewController) override;
 	
-	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	class UKimchiAbilitySystemComponent*  KimchiAbilitySystemComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	class UKimchiAttributeSet* KimchiAttributeSet;
-
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
+	TSoftObjectPtr<UDataAsset_StartUpDataBase> CharacterStartUpData;
+	
 public:
 	FORCEINLINE UKimchiAbilitySystemComponent* GetKimchiAbilitySystemComponent() const {return KimchiAbilitySystemComponent;}
 	FORCEINLINE UKimchiAttributeSet* GetKimchiAttributeSet() const {return KimchiAttributeSet;}

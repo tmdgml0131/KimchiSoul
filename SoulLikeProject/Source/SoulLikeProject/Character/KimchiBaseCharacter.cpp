@@ -31,6 +31,9 @@ void AKimchiBaseCharacter::PossessedBy(AController* NewController)
 	if(KimchiAbilitySystemComponent)
 	{
 		KimchiAbilitySystemComponent->InitAbilityActorInfo(this, this);
+
+		// If null, throw break-point
+		ensureMsgf(!CharacterStartUpData.IsNull(), TEXT("Forgot To Assign StartUp Data to %s"), *GetName());
 	}
 }
 

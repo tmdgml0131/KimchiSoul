@@ -11,6 +11,7 @@
 #include "../DataAssets/Input/DataAsset_InputConfig.h"
 #include "../Components/Input/KimchiInputComponent.h"
 #include "../KimchiGameplayTags.h"
+#include "SoulLikeProject/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 
 #define PARAGON
 
@@ -78,9 +79,13 @@ void AKimchiCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if(KimchiAbilitySystemComponent && KimchiAttributeSet)
+	// Soft-Reference이기 때문에 null-check not Validation
+	if(!CharacterStartUpData.IsNull())
 	{
-		
+		if(UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
+		{
+			LoadedData->GiveToAbilitySystemComponent(KimchiAbilitySystemComponent);
+		}
 	}
 }
 

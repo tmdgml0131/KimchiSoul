@@ -13,6 +13,7 @@
     </None>
     <None Include="..\..\.vsconfig" />
     <None Include="..\..\SoulLikeProject.png" />
+    <None Include="..\..\SoulLikeProject.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -60,6 +61,15 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAttributeSet.h">
       <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\AbilitySystem\Abilities">
+      <UniqueIdentifier>{D9FDFACC-7FBC-31C6-938C-04F6415CA14D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\AnimInstances">
       <UniqueIdentifier>{508CB8C1-59C4-37B7-AA58-BC2CCAE5DB41}</UniqueIdentifier>
@@ -139,6 +149,21 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.h">
       <Filter>Source\SoulLikeProject\DataAssets\Input</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\DataAssets\StartUpData">
+      <UniqueIdentifier>{C7DCC4B8-5871-30D3-B558-1E5C658D42AE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.cpp">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.h">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_StartUpDataBase.cpp">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_StartUpDataBase.h">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\GameMode">
       <UniqueIdentifier>{317E8FBC-1465-335F-BB32-CDFBD4E7D2A7}</UniqueIdentifier>
     </Filter>
@@ -147,6 +172,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.h">
       <Filter>Source\SoulLikeProject\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\Items">
+      <UniqueIdentifier>{73A53973-7BE0-367A-8325-702DBE6D5F5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SoulLikeProject\Items\Weapons">
+      <UniqueIdentifier>{75F7146B-0067-3136-99D0-B2DE4678D947}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiHeroWeapon.cpp">
+      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiHeroWeapon.h">
+      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiWeaponBase.cpp">
+      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiWeaponBase.h">
+      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
