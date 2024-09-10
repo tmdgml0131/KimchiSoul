@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "KimchiBaseCharacter.h"
-#include "KimchiCharacter.generated.h"
+#include "KimchiHeroCharacter.generated.h"
 
 struct FInputActionValue;
 class UHeroCombatComponent;
@@ -12,12 +12,12 @@ class UHeroCombatComponent;
  * 
  */
 UCLASS()
-class SOULLIKEPROJECT_API AKimchiCharacter : public AKimchiBaseCharacter
+class SOULLIKEPROJECT_API AKimchiHeroCharacter : public AKimchiBaseCharacter
 {
 	GENERATED_BODY()
 
 public:
-	AKimchiCharacter();
+	AKimchiHeroCharacter();
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "KimchiCharacter.h"
+#include "KimchiHeroCharacter.h"
 
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -16,7 +16,7 @@
 
 #define PARAGON
 
-AKimchiCharacter::AKimchiCharacter()
+AKimchiHeroCharacter::AKimchiHeroCharacter()
 {
 	// Character CapsuleComponents Initial Settings 
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.f);
@@ -47,7 +47,7 @@ AKimchiCharacter::AKimchiCharacter()
 	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>(TEXT("HeroCombatComponent"));
 }
 
-void AKimchiCharacter::BeginPlay()
+void AKimchiHeroCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -59,7 +59,7 @@ void AKimchiCharacter::BeginPlay()
 #endif
 }
 
-void AKimchiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AKimchiHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
@@ -78,7 +78,7 @@ void AKimchiCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
 }
 
-void AKimchiCharacter::PossessedBy(AController* NewController)
+void AKimchiHeroCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
@@ -92,7 +92,7 @@ void AKimchiCharacter::PossessedBy(AController* NewController)
 	}
 }
 
-void AKimchiCharacter::Input_Move(const FInputActionValue& InputActionValue)
+void AKimchiHeroCharacter::Input_Move(const FInputActionValue& InputActionValue)
 {
 	const FVector2D MovementVector = InputActionValue.Get<FVector2D>();
 	const FRotator MovementRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
@@ -111,7 +111,7 @@ void AKimchiCharacter::Input_Move(const FInputActionValue& InputActionValue)
 	}
 }
 
-void AKimchiCharacter::Input_Look(const FInputActionValue& InputActionValue)
+void AKimchiHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 {
 	const FVector2D LookAxisVector = InputActionValue.Get<FVector2D>();
 
@@ -126,7 +126,7 @@ void AKimchiCharacter::Input_Look(const FInputActionValue& InputActionValue)
 	}
 }
 
-void AKimchiCharacter::Input_Jump(const FInputActionValue& InputActionValue)
+void AKimchiHeroCharacter::Input_Jump(const FInputActionValue& InputActionValue)
 {
 	Super::Jump();
 }

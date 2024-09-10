@@ -3,7 +3,7 @@
 
 #include "KimchiHeroAnimInstance.h"
 
-#include "SoulLikeProject/Character/KimchiCharacter.h"
+#include "SoulLikeProject/Character/KimchiHeroCharacter.h"
 
 void UKimchiHeroAnimInstance::NativeInitializeAnimation()
 {
@@ -11,7 +11,7 @@ void UKimchiHeroAnimInstance::NativeInitializeAnimation()
 	
 	if(OwningCharacter)
 	{
-		OwningHeroCharacter = Cast<AKimchiCharacter>(OwningCharacter);
+		OwningHeroCharacter = Cast<AKimchiHeroCharacter>(OwningCharacter);
 	}
 }
 
