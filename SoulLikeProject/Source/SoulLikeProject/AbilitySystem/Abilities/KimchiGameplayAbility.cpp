@@ -2,7 +2,8 @@
 
 
 #include "KimchiGameplayAbility.h"
-#include "../KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/Components/Combat/PawnCombatComponent.h"
 
 void UKimchiGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
 {
@@ -27,4 +28,9 @@ void UKimchiGameplayAbility::EndAbility(const FGameplayAbilitySpecHandle Handle,
 			ActorInfo->AbilitySystemComponent->ClearAbility(Handle);
 		}
 	}
+}
+
+UPawnCombatComponent* UKimchiGameplayAbility::GetPawnCombatComponentFromActorInfo() const
+{
+	return GetAvatarActorFromActorInfo()->FindComponentByClass<UPawnCombatComponent>();
 }

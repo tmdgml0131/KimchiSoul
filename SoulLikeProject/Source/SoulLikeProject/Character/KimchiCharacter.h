@@ -7,6 +7,7 @@
 #include "KimchiCharacter.generated.h"
 
 struct FInputActionValue;
+class UHeroCombatComponent;
 /**
  * 
  */
@@ -31,6 +32,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	UHeroCombatComponent* HeroCombatComponent;
 #pragma endregion
 	
 #pragma region Input
@@ -41,6 +45,9 @@ private:
 	void Input_Look(const FInputActionValue& InputActionValue);
 	void Input_Jump(const FInputActionValue& InputActionValue);
 #pragma endregion
+
+public:
+	FORCEINLINE UHeroCombatComponent* GetHeroCombatComponent() const {return HeroCombatComponent;}
 };
 
 

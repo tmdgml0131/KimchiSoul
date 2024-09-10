@@ -304,6 +304,18 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Components\PawnExtensionComponentBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Components\PawnExtensionComponentBase.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\HeroCombatComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\HeroCombatComponent.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\PawnCombatComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\PawnCombatComponent.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\Components\Input\KimchiInputComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

@@ -12,6 +12,7 @@
 #include "../Components/Input/KimchiInputComponent.h"
 #include "../KimchiGameplayTags.h"
 #include "SoulLikeProject/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
+#include "SoulLikeProject/Components/Combat/HeroCombatComponent.h"
 
 #define PARAGON
 
@@ -42,6 +43,8 @@ AKimchiCharacter::AKimchiCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 500.f, 0.f);
 	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
+
+	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>(TEXT("HeroCombatComponent"));
 }
 
 void AKimchiCharacter::BeginPlay()

@@ -6,6 +6,8 @@
 #include "Abilities/GameplayAbility.h"
 #include "KimchiGameplayAbility.generated.h"
 
+class UPawnCombatComponent;
+
 UENUM(BlueprintType)
 enum class EKimchiAbilityActivationPolicy : uint8
 {
@@ -27,5 +29,8 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, Category = "KimchiAbility")
 	EKimchiAbilityActivationPolicy AbilityActivationPolicy = EKimchiAbilityActivationPolicy::OnTriggered;
+
+	UFUNCTION(BlueprintPure, Category = "Kimchi|Ability")
+	UPawnCombatComponent* GetPawnCombatComponentFromActorInfo() const;
 	
 };
