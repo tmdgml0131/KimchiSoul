@@ -4,7 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+
+//////////////////////////////////////////////
 #include "KimchiWeaponBase.generated.h"
+
+class UBoxComponent;
 
 UCLASS()
 class SOULLIKEPROJECT_API AKimchiWeaponBase : public AActor
@@ -20,7 +24,7 @@ protected:
 	UStaticMeshComponent* WeaponMesh;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapons")
-	class UBoxComponent* WeaponCollisionBox;
+	UBoxComponent* WeaponCollisionBox;
 
 public:
 	FORCEINLINE UBoxComponent* GetWeaponCollisionBox() const {return WeaponCollisionBox;}

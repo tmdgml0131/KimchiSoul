@@ -2,8 +2,8 @@
 
 
 #include "DataAsset_StartUpDataBase.h"
-#include "../../AbilitySystem/Abilities/KimchiGameplayAbility.h"
-#include "../../AbilitySystem/KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/AbilitySystem/Abilities/KimchiGameplayAbility.h"
+#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
 
 void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive,
 	int32 ApplyLevel)

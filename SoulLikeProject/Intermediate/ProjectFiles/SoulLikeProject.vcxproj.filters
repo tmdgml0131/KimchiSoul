@@ -71,6 +71,12 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.h">
       <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\AnimInstances">
       <UniqueIdentifier>{508CB8C1-59C4-37B7-AA58-BC2CCAE5DB41}</UniqueIdentifier>
     </Filter>
@@ -110,10 +116,10 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.h">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.cpp">
+    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.cpp">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiCharacter.h">
+    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.h">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\Components">

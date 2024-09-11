@@ -8,9 +8,9 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "../DataAssets/Input/DataAsset_InputConfig.h"
-#include "../Components/Input/KimchiInputComponent.h"
-#include "../KimchiGameplayTags.h"
+#include "SoulLikeProject/DataAssets/Input/DataAsset_InputConfig.h"
+#include "SoulLikeProject/Components/Input/KimchiInputComponent.h"
+#include "SoulLikeProject/KimchiGameplayTags.h"
 #include "SoulLikeProject/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 #include "SoulLikeProject/Components/Combat/HeroCombatComponent.h"
 

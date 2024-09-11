@@ -3,9 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "../KimchiCharacterAnimInstance.h"
+#include "SoulLikeProject/AnimInstances/KimchiCharacterAnimInstance.h"
+
+//////////////////////////////////////////////////
 #include "KimchiHeroAnimInstance.generated.h"
 
+class AKimchiHeroCharacter;
 /**
  * 
  */
@@ -20,7 +23,7 @@ public:
 
 protected:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "AnimData|Refrences")
-	class AKimchiHeroCharacter* OwningHeroCharacter;
+	AKimchiHeroCharacter* OwningHeroCharacter;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "AnimData|LocomotionData")
 	bool bShouldEnterRelaxState;

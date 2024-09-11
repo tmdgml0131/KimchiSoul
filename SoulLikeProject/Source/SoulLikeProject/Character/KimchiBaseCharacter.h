@@ -8,6 +8,8 @@
 #include "KimchiBaseCharacter.generated.h"
 
 class UDataAsset_StartUpDataBase;
+class UKimchiAbilitySystemComponent;
+class UKimchiAttributeSet;
 
 UCLASS()
 class SOULLIKEPROJECT_API AKimchiBaseCharacter : public ACharacter, public IAbilitySystemInterface
@@ -23,10 +25,10 @@ protected:
 	virtual void PossessedBy(AController* NewController) override;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
-	class UKimchiAbilitySystemComponent*  KimchiAbilitySystemComponent;
+	UKimchiAbilitySystemComponent*  KimchiAbilitySystemComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
-	class UKimchiAttributeSet* KimchiAttributeSet;
+	UKimchiAttributeSet* KimchiAttributeSet;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
 	TSoftObjectPtr<UDataAsset_StartUpDataBase> CharacterStartUpData;

@@ -280,6 +280,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.h"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -303,7 +307,7 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.h" />
+    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\Components\PawnExtensionComponentBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

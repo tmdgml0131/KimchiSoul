@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "../KimchiBaseAnimInstance.h"
+#include "SoulLikeProject/AnimInstances/KimchiBaseAnimInstance.h"
+
+///////////////////////////////////////////////////////
 #include "KimchiHeroLinkedLayer.generated.h"
 
 /**

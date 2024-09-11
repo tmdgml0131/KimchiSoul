@@ -6,6 +6,8 @@
 #include "KimchiBaseAnimInstance.h"
 #include "KimchiCharacterAnimInstance.generated.h"
 
+class AKimchiBaseCharacter;
+class UCharacterMovementComponent;
 
 /**
  * 
@@ -22,10 +24,10 @@ public:
 
 protected:
 	UPROPERTY()
-	class AKimchiBaseCharacter* OwningCharacter;
+	AKimchiBaseCharacter* OwningCharacter;
 	
 	UPROPERTY()
-	class UCharacterMovementComponent* OwningMovementComponent;
+	UCharacterMovementComponent* OwningMovementComponent;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "AnimData|LocomotionData")
 	float GroundSpeed;

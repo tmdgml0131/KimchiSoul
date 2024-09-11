@@ -5,7 +5,12 @@
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
 #include "Engine/DataAsset.h"
+
+///////////////////////////////
 #include "DataAsset_InputConfig.generated.h"
+
+class UInputAction;
+class UInputMappingContext;
 
 USTRUCT(BlueprintType)
 struct FKimchiInputActionConfig
@@ -17,7 +22,7 @@ public:
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	class UInputAction* InputAction;
+	UInputAction* InputAction;
 };
 
 /**
@@ -30,7 +35,7 @@ class SOULLIKEPROJECT_API UDataAsset_InputConfig : public UDataAsset
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	class UInputMappingContext* DefaultMappingContext;
+	UInputMappingContext* DefaultMappingContext;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
 	TArray<FKimchiInputActionConfig> NativeInputActions;

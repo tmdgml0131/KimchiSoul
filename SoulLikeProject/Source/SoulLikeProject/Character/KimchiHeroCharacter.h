@@ -8,6 +8,11 @@
 
 struct FInputActionValue;
 class UHeroCombatComponent;
+class USpringArmComponent;
+class UCameraComponent;
+class UDataAsset_InputConfig;
+class UInputComponent;
+
 /**
  * 
  */
@@ -20,7 +25,7 @@ public:
 	AKimchiHeroCharacter();
 protected:
 	virtual void BeginPlay() override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	virtual void PossessedBy(AController* NewController) override;
 private:
 	UPROPERTY(EditAnywhere, Category = "Bones")
@@ -28,10 +33,10 @@ private:
 	
 #pragma region Components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+	USpringArmComponent* CameraBoom;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* FollowCamera;
+	UCameraComponent* FollowCamera;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	UHeroCombatComponent* HeroCombatComponent;
@@ -39,7 +44,7 @@ private:
 	
 #pragma region Input
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))
-	class UDataAsset_InputConfig* InputConfigDataAsset;
+	UDataAsset_InputConfig* InputConfigDataAsset;
 
 	void Input_Move(const FInputActionValue& InputActionValue);
 	void Input_Look(const FInputActionValue& InputActionValue);

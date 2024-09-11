@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "EnhancedInputComponent.h"
-#include "../../DataAssets/Input/DataAsset_InputConfig.h"
+#include "SoulLikeProject/DataAssets/Input/DataAsset_InputConfig.h"
 
+////////////////////////////////////////////////////////
 #include "KimchiInputComponent.generated.h"
 
 /**
