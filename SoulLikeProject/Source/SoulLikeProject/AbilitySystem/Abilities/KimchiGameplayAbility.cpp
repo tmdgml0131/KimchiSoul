@@ -34,3 +34,8 @@ UPawnCombatComponent* UKimchiGameplayAbility::GetPawnCombatComponentFromActorInf
 {
 	return GetAvatarActorFromActorInfo()->FindComponentByClass<UPawnCombatComponent>();
 }
+
+UKimchiAbilitySystemComponent* UKimchiGameplayAbility::GetKimchiAbilitySystemComponentFromActorInfo() const
+{
+	return Cast<UKimchiAbilitySystemComponent>(CurrentActorInfo->AbilitySystemComponent);
+}

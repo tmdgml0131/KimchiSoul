@@ -4,8 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
+
+/////////////////////////
 #include "KimchiGameplayAbility.generated.h"
 
+class UKimchiAbilitySystemComponent;
 class UPawnCombatComponent;
 
 UENUM(BlueprintType)
@@ -32,5 +35,8 @@ protected:
 
 	UFUNCTION(BlueprintPure, Category = "Kimchi|Ability")
 	UPawnCombatComponent* GetPawnCombatComponentFromActorInfo() const;
+
+	UFUNCTION(BlueprintPure, Category = "Kimchi|Ability")
+	UKimchiAbilitySystemComponent* GetKimchiAbilitySystemComponentFromActorInfo() const;
 	
 };
