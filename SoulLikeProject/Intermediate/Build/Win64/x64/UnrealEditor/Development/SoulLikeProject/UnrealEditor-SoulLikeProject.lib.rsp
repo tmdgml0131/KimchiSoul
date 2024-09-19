@@ -8,5 +8,6 @@
 /NODEFAULTLIB
 "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Module.SoulLikeProject.cpp.obj"
+"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\KimchiGameplayTags.cpp.obj"
 "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Default.rc2.res"
 /OUT:"D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\UnrealEditor-SoulLikeProject.lib"
