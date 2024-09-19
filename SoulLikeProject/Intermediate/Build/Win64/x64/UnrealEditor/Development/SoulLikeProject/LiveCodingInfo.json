@@ -45,8 +45,8 @@
 			"KimchiGameModeBase.cpp.obj",
 			"KimchiHeroWeapon.cpp.obj",
 			"KimchiWeaponBase.cpp.obj",
-			"SoulLikeProject.cpp.obj",
-			"KimchiGameplayTags.cpp.obj"
+			"KimchiGameplayTags.cpp.obj",
+			"SoulLikeProject.cpp.obj"
 		]
 	}
 }
