@@ -158,10 +158,10 @@
     <Filter Include="Source\SoulLikeProject\Controller">
       <UniqueIdentifier>{00162734-8879-3518-895A-03B7DD64EF9A}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Controller\KimchiController.cpp">
+    <ClCompile Include="..\..\Source\SoulLikeProject\Controller\KimchiHeroController.cpp">
       <Filter>Source\SoulLikeProject\Controller</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiController.h">
+    <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiHeroController.h">
       <Filter>Source\SoulLikeProject\Controller</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\DataAssets">
@@ -217,6 +217,15 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiWeaponBase.h">
       <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\KimchiTypes">
+      <UniqueIdentifier>{0C4CE6C4-6691-355F-83B0-2B6FD34BEB5D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiTypes\KimchiStructTypes.cpp">
+      <Filter>Source\SoulLikeProject\KimchiTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiTypes\KimchiStructTypes.h">
+      <Filter>Source\SoulLikeProject\KimchiTypes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

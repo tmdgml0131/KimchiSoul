@@ -3,3 +3,9 @@
 
 #include "HeroCombatComponent.h"
 
+#include "SoulLikeProject/Items/Weapons/KimchiHeroWeapon.h"
+
+AKimchiHeroWeapon* UHeroCombatComponent::GetHeroCarriedWeaponByTag(FGameplayTag InWeaponTag) const
+{
+ 	return Cast<AKimchiHeroWeapon>(GetCharacterCarriedWeaponByTag(InWeaponTag));
+}

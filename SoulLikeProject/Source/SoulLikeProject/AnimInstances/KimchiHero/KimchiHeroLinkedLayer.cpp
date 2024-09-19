@@ -2,4 +2,9 @@
 
 
 #include "KimchiHeroLinkedLayer.h"
+#include "KimchiHeroAnimInstance.h"
 
+UKimchiHeroAnimInstance* UKimchiHeroLinkedLayer::GetHeroAnimInstance() const
+{
+	return Cast<UKimchiHeroAnimInstance>(GetOwningComponent()->GetAnimInstance());
+}

@@ -8,6 +8,7 @@
 ///////////////////////////////////////////////////////
 #include "KimchiHeroLinkedLayer.generated.h"
 
+class UKimchiHeroAnimInstance;
 /**
  * 
  */
@@ -15,5 +16,9 @@ UCLASS()
 class SOULLIKEPROJECT_API UKimchiHeroLinkedLayer : public UKimchiBaseAnimInstance
 {
 	GENERATED_BODY()
+
+public:
+	UFUNCTION(BlueprintPure, meta = (NotBlueprintThreadSafe))
+	UKimchiHeroAnimInstance* GetHeroAnimInstance() const;
 	
 };

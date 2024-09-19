@@ -4,8 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "PawnCombatComponent.h"
+
+////////////////////////////////////////
 #include "HeroCombatComponent.generated.h"
 
+class AKimchiHeroWeapon;
 /**
  * 
  */
@@ -13,5 +16,8 @@ UCLASS()
 class SOULLIKEPROJECT_API UHeroCombatComponent : public UPawnCombatComponent
 {
 	GENERATED_BODY()
-	
+
+public:
+	UFUNCTION(BlueprintCallable, Category = "Kimchi|Combat")
+	AKimchiHeroWeapon* GetHeroCarriedWeaponByTag(FGameplayTag InWeaponTag) const;
 };
