@@ -13,5 +13,8 @@ UCLASS()
 class SOULLIKEPROJECT_API UKimchiAbilitySystemComponent : public UAbilitySystemComponent
 {
 	GENERATED_BODY()
-	
+
+public:
+	void OnAbilityInputPressed(const FGameplayTag& InInputTag);
+	void OnAbilityInputReleased(const FGameplayTag& InInputTag);
 };

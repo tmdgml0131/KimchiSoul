@@ -11,6 +11,7 @@
 #include "SoulLikeProject/DataAssets/Input/DataAsset_InputConfig.h"
 #include "SoulLikeProject/Components/Input/KimchiInputComponent.h"
 #include "SoulLikeProject/KimchiGameplayTags.h"
+#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
 #include "SoulLikeProject/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 #include "SoulLikeProject/Components/Combat/HeroCombatComponent.h"
 
@@ -76,6 +77,8 @@ void AKimchiHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
 	KimchiInputComponent->BindNativeInputAction(InputConfigDataAsset, KimchiGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
+
+	KimchiInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
 
 void AKimchiHeroCharacter::PossessedBy(AController* NewController)
@@ -129,4 +132,14 @@ void AKimchiHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 void AKimchiHeroCharacter::Input_Jump(const FInputActionValue& InputActionValue)
 {
 	Super::Jump();
+}
+
+void AKimchiHeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
+{
+	KimchiAbilitySystemComponent->OnAbilityInputPressed(InInputTag);
+}
+
+void AKimchiHeroCharacter::Input_AbilityInputReleased(FGameplayTag InInputTag)
+{
+	KimchiAbilitySystemComponent->OnAbilityInputReleased(InInputTag);
 }
