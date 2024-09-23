@@ -6,11 +6,6 @@
 #include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
 #include "SoulLikeProject/AbilitySystem/Abilities/KimchiGameplayAbility.h"
 
-bool FKimchiHeroAbilitySet::IsValid() const
-{
-	return InputTag.IsValid() && AbilityToGrant;
-}
-
 void UDataAsset_KimchiStartUpData::GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive,
 	int32 ApplyLevel)
 {

@@ -4,25 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "DataAsset_StartUpDataBase.h"
-#include "GameplayTagContainer.h"
-
-
+#include "SoulLikeProject/KimchiTypes/KimchiStructTypes.h"
 /////////////////////////////////////////////
 #include "DataAsset_KimchiStartUpData.generated.h"
-
-USTRUCT(BlueprintType)
-struct FKimchiHeroAbilitySet
-{
-	GENERATED_BODY()
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Categories = "InputTag"))
-	FGameplayTag InputTag;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	TSubclassOf<UKimchiGameplayAbility> AbilityToGrant;
-
-	bool IsValid() const;
-};
 
 /**
  * 

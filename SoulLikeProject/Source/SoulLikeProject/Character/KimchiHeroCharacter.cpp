@@ -85,7 +85,7 @@ void AKimchiHeroCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	// Soft-Reference이기 때문에 null-check not Validation
+	// Bcs its Soft-Reference, null-check not Validation
 	if(!CharacterStartUpData.IsNull())
 	{
 		if(UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
