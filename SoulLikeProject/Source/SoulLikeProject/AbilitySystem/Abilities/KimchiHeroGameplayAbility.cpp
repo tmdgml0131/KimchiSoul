@@ -19,7 +19,7 @@ AKimchiHeroController* UKimchiHeroGameplayAbility::GetHeroControllerFromActorInf
 {
 	if(!CachedKimchiHeroController.IsValid())
 	{
-		CachedKimchiHeroController = Cast<AKimchiHeroController>(CurrentActorInfo->AvatarActor);
+		CachedKimchiHeroController = Cast<AKimchiHeroController>(CurrentActorInfo->PlayerController);
 	}
 
 	return CachedKimchiHeroController.IsValid()? CachedKimchiHeroController.Get() : nullptr;

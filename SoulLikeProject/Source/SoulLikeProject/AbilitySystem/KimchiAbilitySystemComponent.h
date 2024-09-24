@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemComponent.h"
+#include "SoulLikeProject/KimchiTypes/KimchiStructTypes.h"
+
+///////////////////////////////////////////////////////////////////////////
 #include "KimchiAbilitySystemComponent.generated.h"
 
 /**
@@ -17,4 +20,11 @@ class SOULLIKEPROJECT_API UKimchiAbilitySystemComponent : public UAbilitySystemC
 public:
 	void OnAbilityInputPressed(const FGameplayTag& InInputTag);
 	void OnAbilityInputReleased(const FGameplayTag& InInputTag);
+
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability", meta = (ApplyLevel = "1"))
+	void GrantHeroWeaponAbilities(
+		const TArray<FKimchiHeroAbilitySet>& InDefaultWeaponAbilities,
+		int32 ApplyLevel,
+		TArray<FGameplayAbilitySpecHandle>& OutGrantedAbilitySpecHandles
+		);
 };
