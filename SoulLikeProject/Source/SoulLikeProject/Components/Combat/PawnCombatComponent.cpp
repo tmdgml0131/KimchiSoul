@@ -4,7 +4,6 @@
 #include "PawnCombatComponent.h"
 #include "SoulLikeProject/Items/Weapons/KimchiWeaponBase.h"
 
-
 void UPawnCombatComponent::RegisterSpawnedWeapon(FGameplayTag InWeaponTagToRegister, AKimchiWeaponBase* InWeaponToRegister, bool bRegisterAsEquippedWeapon)
 {
 	checkf(!CharacterCarriedWeaponMap.Contains(InWeaponTagToRegister),TEXT("A named named %s has already been added as carried weapon"),*InWeaponTagToRegister.ToString());

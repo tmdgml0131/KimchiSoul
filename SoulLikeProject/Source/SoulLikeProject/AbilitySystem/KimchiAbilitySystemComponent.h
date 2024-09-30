@@ -27,4 +27,7 @@ public:
 		int32 ApplyLevel,
 		TArray<FGameplayAbilitySpecHandle>& OutGrantedAbilitySpecHandles
 		);
+
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability")
+	void RemoveGrantedHeroWeaponAbility(UPARAM(ref) TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove);
 };

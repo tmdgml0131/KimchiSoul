@@ -290,8 +290,8 @@
 /I "..\Plugins\Runtime\DataRegistry\Intermediate\Build\Win64\UnrealEditor\Inc\DataRegistry\UHT"
 /I "..\Plugins\Runtime\DataRegistry\Source"
 /I "..\Plugins\Runtime\DataRegistry\Source\DataRegistry\Public"
-/I "D:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
-/I "D:\git\KimchiSoul\SoulLikeProject\Source"
+/I "C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
+/I "C:\git\KimchiSoul\SoulLikeProject\Source"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"
