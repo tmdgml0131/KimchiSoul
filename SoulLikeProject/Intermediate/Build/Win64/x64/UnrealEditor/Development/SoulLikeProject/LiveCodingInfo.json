@@ -11,6 +11,7 @@
 			"KimchiBaseAnimInstance.gen.cpp.obj",
 			"KimchiBaseCharacter.gen.cpp.obj",
 			"KimchiCharacterAnimInstance.gen.cpp.obj",
+			"KimchiFunctionLibrary.gen.cpp.obj",
 			"KimchiGameModeBase.gen.cpp.obj",
 			"KimchiGameplayAbility.gen.cpp.obj",
 			"KimchiHeroAnimInstance.gen.cpp.obj",
@@ -27,6 +28,7 @@
 			"SoulLikeProject.init.gen.cpp.obj",
 			"KimchiGameplayAbility.cpp.obj",
 			"KimchiHeroGameplayAbility.cpp.obj",
+			"KimchiAbilitySystemComponent.cpp.obj",
 			"KimchiAttributeSet.cpp.obj",
 			"KimchiBaseAnimInstance.cpp.obj",
 			"KimchiCharacterAnimInstance.cpp.obj",
@@ -35,6 +37,7 @@
 			"KimchiBaseCharacter.cpp.obj",
 			"KimchiHeroCharacter.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
 			"KimchiInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"KimchiHeroController.cpp.obj",
@@ -42,13 +45,12 @@
 			"DataAsset_KimchiStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"KimchiGameModeBase.cpp.obj",
+			"KimchiHeroWeapon.cpp.obj",
 			"KimchiWeaponBase.cpp.obj",
-			"KimchiGameplayTags.cpp.obj",
 			"KimchiStructTypes.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"KimchiAbilitySystemComponent.cpp.obj",
-			"PawnCombatComponent.cpp.obj",
-			"KimchiHeroWeapon.cpp.obj"
+			"KimchiFunctionLibrary.cpp.obj",
+			"KimchiGameplayTags.cpp.obj"
 		]
 	}
 }

@@ -31,6 +31,12 @@
     <Filter Include="Source\SoulLikeProject">
       <UniqueIdentifier>{521FB5C9-7724-3EDD-9AB0-4EFB8B855218}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiFunctionLibrary.cpp">
+      <Filter>Source\SoulLikeProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiFunctionLibrary.h">
+      <Filter>Source\SoulLikeProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.cpp">
       <Filter>Source\SoulLikeProject</Filter>
     </ClCompile>
