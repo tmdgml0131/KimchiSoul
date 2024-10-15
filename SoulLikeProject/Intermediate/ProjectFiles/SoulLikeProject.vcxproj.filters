@@ -70,6 +70,12 @@
     <Filter Include="Source\SoulLikeProject\AbilitySystem\Abilities">
       <UniqueIdentifier>{D9FDFACC-7FBC-31C6-938C-04F6415CA14D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiEnemyGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiEnemyGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.cpp">
       <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -121,6 +127,12 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.h">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiEnemyCharacter.cpp">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiEnemyCharacter.h">
+      <Filter>Source\SoulLikeProject\Character</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.cpp">
       <Filter>Source\SoulLikeProject\Character</Filter>
     </ClCompile>
@@ -139,6 +151,12 @@
     <Filter Include="Source\SoulLikeProject\Components\Combat">
       <UniqueIdentifier>{D1D683F6-5081-3558-BD84-93C5A1F7F763}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\EnemyCombatComponent.cpp">
+      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\EnemyCombatComponent.h">
+      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\HeroCombatComponent.cpp">
       <Filter>Source\SoulLikeProject\Components\Combat</Filter>
     </ClCompile>
@@ -184,6 +202,12 @@
     <Filter Include="Source\SoulLikeProject\DataAssets\StartUpData">
       <UniqueIdentifier>{C7DCC4B8-5871-30D3-B558-1E5C658D42AE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_EnemyStartUpData.cpp">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_EnemyStartUpData.h">
+      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.cpp">
       <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
     </ClCompile>
