@@ -2,9 +2,10 @@
 
 
 #include "KimchiEnemyCharacter.h"
-
+#include "Engine/AssetManager.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "SoulLikeProject/Components/Combat/EnemyCombatComponent.h"
+#include "SoulLikeProject/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 
 AKimchiEnemyCharacter::AKimchiEnemyCharacter()
 {
@@ -21,4 +22,29 @@ AKimchiEnemyCharacter::AKimchiEnemyCharacter()
 	GetCharacterMovement()->BrakingDecelerationWalking = 1000.f;
 
 	EnemyCombatComponent = CreateDefaultSubobject<UEnemyCombatComponent>(TEXT("EnemyCombatComponent"));
+}
+
+void AKimchiEnemyCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	InitEnemyStartUpData();
+}
+
+void AKimchiEnemyCharacter::InitEnemyStartUpData()
+{
+	if(CharacterStartUpData.IsNull()) return;
+
+	UAssetManager::GetStreamableManager().RequestAsyncLoad(
+		CharacterStartUpData.ToSoftObjectPath(),
+		FStreamableDelegate::CreateLambda(
+			[this]()
+			{
+				if(UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.Get())
+				{
+					LoadedData->GiveToAbilitySystemComponent(KimchiAbilitySystemComponent);
+				}
+			}
+		)
+	);
 }

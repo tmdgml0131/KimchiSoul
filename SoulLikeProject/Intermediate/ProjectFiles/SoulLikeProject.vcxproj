@@ -351,10 +351,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_EnemyStartUpData.h"/>
-    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.cpp">
+    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_HeroStartUpData.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_HeroStartUpData.h" />
     <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_StartUpDataBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
