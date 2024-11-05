@@ -40,6 +40,7 @@
 			"KimchiHeroAnimInstance.cpp.obj",
 			"KimchiHeroLinkedLayer.cpp.obj",
 			"KimchiBaseCharacter.cpp.obj",
+			"KimchiEnemyCharacter.cpp.obj",
 			"KimchiHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
@@ -48,17 +49,16 @@
 			"PawnExtensionComponentBase.cpp.obj",
 			"KimchiHeroController.cpp.obj",
 			"DataAsset_InputConfig.cpp.obj",
+			"DataAsset_EnemyStartUpData.cpp.obj",
+			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"KimchiGameModeBase.cpp.obj",
 			"KimchiHeroWeapon.cpp.obj",
 			"KimchiWeaponBase.cpp.obj",
 			"KimchiFunctionLibrary.cpp.obj",
-			"KimchiGameplayTags.cpp.obj",
 			"KimchiStructTypes.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"KimchiEnemyCharacter.cpp.obj",
-			"DataAsset_EnemyStartUpData.cpp.obj",
-			"DataAsset_HeroStartUpData.cpp.obj"
+			"KimchiGameplayTags.cpp.obj"
 		]
 	}
 }

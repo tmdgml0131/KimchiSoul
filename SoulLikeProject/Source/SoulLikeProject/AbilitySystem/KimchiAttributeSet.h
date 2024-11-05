@@ -13,5 +13,6 @@ UCLASS()
 class SOULLIKEPROJECT_API UKimchiAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
-	
+
+public:
 };
