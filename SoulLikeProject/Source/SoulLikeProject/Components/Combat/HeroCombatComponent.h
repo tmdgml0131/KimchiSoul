@@ -8,7 +8,7 @@
 ////////////////////////////////////////
 #include "HeroCombatComponent.generated.h"
 
-class AKimchiHeroWeapon;
+class AWarriorHeroWeapon;
 /**
  * 
  */
@@ -18,6 +18,6 @@ class SOULLIKEPROJECT_API UHeroCombatComponent : public UPawnCombatComponent
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = "Kimchi|Combat")
-	AKimchiHeroWeapon* GetHeroCarriedWeaponByTag(FGameplayTag InWeaponTag) const;
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Combat")
+	AWarriorHeroWeapon* GetHeroCarriedWeaponByTag(FGameplayTag InWeaponTag) const;
 };

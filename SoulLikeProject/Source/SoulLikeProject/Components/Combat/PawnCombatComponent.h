@@ -9,7 +9,7 @@
 ///////////////////////////////////////
 #include "PawnCombatComponent.generated.h"
 
-class AKimchiWeaponBase;
+class AWarriorWeaponBase;
 /**
  * 
  */
@@ -19,18 +19,18 @@ class SOULLIKEPROJECT_API UPawnCombatComponent : public UPawnExtensionComponentB
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = "Kimchi|Combat")
-	void RegisterSpawnedWeapon(FGameplayTag InWeaponTagToRegister,AKimchiWeaponBase* InWeaponToRegister,bool bRegisterAsEquippedWeapon = false);
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Combat")
+	void RegisterSpawnedWeapon(FGameplayTag InWeaponTagToRegister,AWarriorWeaponBase* InWeaponToRegister,bool bRegisterAsEquippedWeapon = false);
 
-	UFUNCTION(BlueprintCallable, Category = "Kimchi|Combat")
-	AKimchiWeaponBase* GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const;
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Combat")
+	AWarriorWeaponBase* GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Kimchi|Combat")
+	UPROPERTY(BlueprintReadWrite, Category = "Warrior|Combat")
 	FGameplayTag CurrentEquippedWeaponTag;
 
-	UFUNCTION(BlueprintCallable, Category = "Kimchi|Combat")
-	AKimchiWeaponBase* GetCharacterCurrentEquippedWeapon() const;
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Combat")
+	AWarriorWeaponBase* GetCharacterCurrentEquippedWeapon() const;
 
 private:
-	TMap<FGameplayTag,AKimchiWeaponBase*> CharacterCarriedWeaponMap;
+	TMap<FGameplayTag,AWarriorWeaponBase*> CharacterCarriedWeaponMap;
 };

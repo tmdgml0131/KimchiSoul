@@ -6,8 +6,8 @@
 #include "Engine/DataAsset.h"
 #include "DataAsset_StartUpDataBase.generated.h"
 
-class UKimchiAbilitySystemComponent;
-class UKimchiGameplayAbility;
+class UWarriorAbilitySystemComponent;
+class UWarriorGameplayAbility;
 /**
  * 
  */
@@ -17,13 +17,13 @@ class SOULLIKEPROJECT_API UDataAsset_StartUpDataBase : public UDataAsset
 	GENERATED_BODY()
 
 public:
-	virtual void GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
+	virtual void GiveToAbilitySystemComponent(UWarriorAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
-	TArray<TSubclassOf<UKimchiGameplayAbility>> ActivateOnGivenAbilities;
+	TArray<TSubclassOf<UWarriorGameplayAbility>> ActivateOnGivenAbilities;
 
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
-	TArray<TSubclassOf<UKimchiGameplayAbility>> ReactiveAbilities;
+	TArray<TSubclassOf<UWarriorGameplayAbility>> ReactiveAbilities;
 
-	void GrantAbilities(const TArray<TSubclassOf<UKimchiGameplayAbility>>& InAbilitiesToGive, UKimchiAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
+	void GrantAbilities(const TArray<TSubclassOf<UWarriorGameplayAbility>>& InAbilitiesToGive, UWarriorAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
 };

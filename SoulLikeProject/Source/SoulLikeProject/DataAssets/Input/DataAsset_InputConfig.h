@@ -13,7 +13,7 @@ class UInputAction;
 class UInputMappingContext;
 
 USTRUCT(BlueprintType)
-struct FKimchiInputActionConfig
+struct FWarriorInputActionConfig
 {
 	GENERATED_BODY()
 
@@ -40,10 +40,10 @@ public:
 	UInputMappingContext* DefaultMappingContext;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
-	TArray<FKimchiInputActionConfig> NativeInputActions;
+	TArray<FWarriorInputActionConfig> NativeInputActions;
 
 	UInputAction* FindNativeInputActionByTag(const FGameplayTag& InInputTag) const;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
-	TArray<FKimchiInputActionConfig> AbilityInputActions;
+	TArray<FWarriorInputActionConfig> AbilityInputActions;
 };

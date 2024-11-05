@@ -2,11 +2,11 @@
 
 
 #include "DataAsset_StartUpDataBase.h"
-#include "SoulLikeProject/AbilitySystem/Abilities/KimchiGameplayAbility.h"
-#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/AbilitySystem/Abilities/WarriorGameplayAbility.h"
+#include "SoulLikeProject/AbilitySystem/WarriorAbilitySystemComponent.h"
 
-void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive,
-	int32 ApplyLevel)
+void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(UWarriorAbilitySystemComponent* InASCToGive,
+                                                              int32 ApplyLevel)
 {
 	check(InASCToGive);
 
@@ -14,12 +14,12 @@ void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(UKimchiAbilitySyst
 	GrantAbilities(ReactiveAbilities, InASCToGive, ApplyLevel);
 }
 
-void UDataAsset_StartUpDataBase::GrantAbilities(const TArray<TSubclassOf<UKimchiGameplayAbility>>& InAbilitiesToGive,
-	UKimchiAbilitySystemComponent* InASCToGive, int32 ApplyLevel)
+void UDataAsset_StartUpDataBase::GrantAbilities(const TArray<TSubclassOf<UWarriorGameplayAbility>>& InAbilitiesToGive,
+	UWarriorAbilitySystemComponent* InASCToGive, int32 ApplyLevel)
 {
 	if(InAbilitiesToGive.IsEmpty()) return;
 
-	for(const TSubclassOf<UKimchiGameplayAbility>& Ability : InAbilitiesToGive)
+	for(const TSubclassOf<UWarriorGameplayAbility>& Ability : InAbilitiesToGive)
 	{
 		if(!Ability) continue;
 

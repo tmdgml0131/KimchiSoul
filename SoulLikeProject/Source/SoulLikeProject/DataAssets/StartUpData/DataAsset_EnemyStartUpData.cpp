@@ -3,16 +3,16 @@
 
 #include "DataAsset_EnemyStartUpData.h"
 
-#include "SoulLikeProject/AbilitySystem/KimchiAbilitySystemComponent.h"
+#include "SoulLikeProject/AbilitySystem/WarriorAbilitySystemComponent.h"
 
-void UDataAsset_EnemyStartUpData::GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive,
+void UDataAsset_EnemyStartUpData::GiveToAbilitySystemComponent(UWarriorAbilitySystemComponent* InASCToGive,
                                                                int32 ApplyLevel)
 {
 	Super::GiveToAbilitySystemComponent(InASCToGive, ApplyLevel);
 
 	if(!EnemyCombatAilities.IsEmpty())
 	{
-		for(const TSubclassOf<UKimchiEnemyGameplayAbility>& AbilityClass: EnemyCombatAilities )
+		for(const TSubclassOf<UWarriorEnemyGameplayAbility>& AbilityClass: EnemyCombatAilities )
 		{
 			if(!AbilityClass) continue;
 

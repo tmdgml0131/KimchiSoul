@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "DataAsset_StartUpDataBase.h"
-#include "SoulLikeProject/KimchiTypes/KimchiStructTypes.h"
+#include "SoulLikeProject/WarriorTypes/WarriorStructTypes.h"
 /////////////////////////////////////////////
 #include "DataAsset_HeroStartUpData.generated.h"
 
@@ -12,14 +12,14 @@
  * 
  */
 UCLASS()
-class SOULLIKEPROJECT_API UDataAsset_KimchiStartUpData : public UDataAsset_StartUpDataBase
+class SOULLIKEPROJECT_API UDataAsset_WarriorStartUpData : public UDataAsset_StartUpDataBase
 {
 	GENERATED_BODY()
 
 public:
-	virtual void GiveToAbilitySystemComponent(UKimchiAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1) override;
+	virtual void GiveToAbilitySystemComponent(UWarriorAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1) override;
 	
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData", meta = (TitleProperty = "InputTag"))
-	TArray<FKimchiHeroAbilitySet> HeroStartUpAbilitySets;
+	TArray<FWarriorHeroAbilitySet> HeroStartUpAbilitySets;
 };
