@@ -25,6 +25,8 @@ class SOULLIKEPROJECT_API AWarriorHeroCharacter : public AWarriorBaseCharacter
 
 public:
 	AWarriorHeroCharacter();
+
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;

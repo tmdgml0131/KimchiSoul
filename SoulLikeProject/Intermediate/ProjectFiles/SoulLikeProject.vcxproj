@@ -259,9 +259,82 @@
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
     <None Include="..\..\Source\SoulLikeProject\SoulLikeProject.Build.cs"/>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorEnumTypes.cpp">
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>C:\UE_5.4\Engine\Intermediate\Build\Unused\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>C:\UE_5.4\Engine\Intermediate\Build\Unused\</BrowseInformationFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>;C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h;C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Definitions.SoulLikeProject.h</ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>C:\UE_5.4\Engine\Intermediate\Build\Unused\</ModuleDependenciesFile>
+      <ModuleOutputFile>C:\UE_5.4\Engine\Intermediate\Build\Unused\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <ObjectFileName>C:\UE_5.4\Engine\Intermediate\Build\Unused\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>C:\UE_5.4\Engine\Intermediate\Build\Unused\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:\UE_5.4\Engine\Intermediate\Build\Unused\SoulLikeProject.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>C:\UE_5.4\Engine\Intermediate\Build\Unused\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>C:\UE_5.4\Engine\Intermediate\Build\Unused\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/std:c++20  /DSAL_NO_ATTRIBUTE_DECLARATIONS=1 /permissive- /Zc:strictStrings- /Zc:__cplusplus /Yu"C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\SoulLikeProject.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorEnumTypes.h" />
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h"/>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorFunctionLibrary.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -338,6 +411,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorGameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Interfaces\PawnCombatInterface.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorHeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -356,8 +432,8 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorBaseAnimInstance.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorCharacterAnimInstance.h"/>
-    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\Hero\WarriorHeroAnimInstance.h" />
-    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\Hero\WarriorHeroLinkedLayer.h" />
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\Hero\WarriorHeroAnimInstance.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\Hero\WarriorHeroLinkedLayer.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorBaseCharacter.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorEnemyCharacter.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorHeroCharacter.h"/>
@@ -372,6 +448,7 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_HeroStartUpData.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_StartUpDataBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorGameModeBase.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorWeaponBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorStructTypes.h"/>
