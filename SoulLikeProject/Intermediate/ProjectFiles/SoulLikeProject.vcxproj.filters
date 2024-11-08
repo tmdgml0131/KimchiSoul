@@ -31,18 +31,6 @@
     <Filter Include="Source\SoulLikeProject">
       <UniqueIdentifier>{521FB5C9-7724-3EDD-9AB0-4EFB8B855218}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiFunctionLibrary.cpp">
-      <Filter>Source\SoulLikeProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiFunctionLibrary.h">
-      <Filter>Source\SoulLikeProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.cpp">
-      <Filter>Source\SoulLikeProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiGameplayTags.h">
-      <Filter>Source\SoulLikeProject</Filter>
-    </ClInclude>
     <None Include="..\..\Source\SoulLikeProject\SoulLikeProject.Build.cs">
       <Filter>Source\SoulLikeProject</Filter>
     </None>
@@ -52,209 +40,275 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\SoulLikeProject.h">
       <Filter>Source\SoulLikeProject</Filter>
     </ClInclude>
-    <Filter Include="Source\SoulLikeProject\AbilitySystem">
-      <UniqueIdentifier>{DD51838C-3E98-39CC-854B-695A61CC0BEA}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private">
+      <UniqueIdentifier>{E1E740AB-0D4A-349F-88F3-BB2CB2F498FC}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAbilitySystemComponent.cpp">
-      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorFunctionLibrary.cpp">
+      <Filter>Source\SoulLikeProject\private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAbilitySystemComponent.h">
-      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAttributeSet.cpp">
-      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorGameplayTags.cpp">
+      <Filter>Source\SoulLikeProject\private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\KimchiAttributeSet.h">
-      <Filter>Source\SoulLikeProject\AbilitySystem</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\AbilitySystem\Abilities">
-      <UniqueIdentifier>{D9FDFACC-7FBC-31C6-938C-04F6415CA14D}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\AbilitySystem">
+      <UniqueIdentifier>{715844F1-34D5-3343-A6D4-7EBBF6DED9C5}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiEnemyGameplayAbility.cpp">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\WarriorAbilitySystemComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiEnemyGameplayAbility.h">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.cpp">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\WarriorAttributeSet.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiGameplayAbility.h">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.cpp">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AbilitySystem\Abilities\KimchiHeroGameplayAbility.h">
-      <Filter>Source\SoulLikeProject\AbilitySystem\Abilities</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\AnimInstances">
-      <UniqueIdentifier>{508CB8C1-59C4-37B7-AA58-BC2CCAE5DB41}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\AbilitySystem\Abilities">
+      <UniqueIdentifier>{D2756CC7-3AF6-3E49-BDAB-61454454EC61}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.cpp">
-      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiBaseAnimInstance.h">
-      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.cpp">
-      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiCharacterAnimInstance.h">
-      <Filter>Source\SoulLikeProject\AnimInstances</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\AnimInstances\KimchiHero">
-      <UniqueIdentifier>{8F4C7319-40E4-3A2C-91DF-A81326BCC047}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorHeroGameplayAbility.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\AnimInstances">
+      <UniqueIdentifier>{02340E0C-30B4-3496-9943-DA087994436C}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.cpp">
-      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AnimInstances\WarriorBaseAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\private\AnimInstances</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroAnimInstance.h">
-      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.cpp">
-      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AnimInstances\WarriorCharacterAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\private\AnimInstances</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\AnimInstances\KimchiHero\KimchiHeroLinkedLayer.h">
-      <Filter>Source\SoulLikeProject\AnimInstances\KimchiHero</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Character">
-      <UniqueIdentifier>{0A6493BB-5CA4-3FD8-BDB2-481F28AB39C2}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\AnimInstances\WarriorHero">
+      <UniqueIdentifier>{BF1B41B9-7B79-3212-B438-84359BC9BBC1}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.cpp">
-      <Filter>Source\SoulLikeProject\Character</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AnimInstances\WarriorHero\WarriorHeroAnimInstance.cpp">
+      <Filter>Source\SoulLikeProject\private\AnimInstances\WarriorHero</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiBaseCharacter.h">
-      <Filter>Source\SoulLikeProject\Character</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiEnemyCharacter.cpp">
-      <Filter>Source\SoulLikeProject\Character</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AnimInstances\WarriorHero\WarriorHeroLinkedLayer.cpp">
+      <Filter>Source\SoulLikeProject\private\AnimInstances\WarriorHero</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiEnemyCharacter.h">
-      <Filter>Source\SoulLikeProject\Character</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.cpp">
-      <Filter>Source\SoulLikeProject\Character</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Character\KimchiHeroCharacter.h">
-      <Filter>Source\SoulLikeProject\Character</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Components">
-      <UniqueIdentifier>{6939DD72-37FB-3D7B-AA24-91B198714F28}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\Character">
+      <UniqueIdentifier>{88F35BF9-5419-3412-ADF6-B1C65B5550BC}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Components\PawnExtensionComponentBase.cpp">
-      <Filter>Source\SoulLikeProject\Components</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Character\WarriorBaseCharacter.cpp">
+      <Filter>Source\SoulLikeProject\private\Character</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Components\PawnExtensionComponentBase.h">
-      <Filter>Source\SoulLikeProject\Components</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Components\Combat">
-      <UniqueIdentifier>{D1D683F6-5081-3558-BD84-93C5A1F7F763}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Character\WarriorEnemyCharacter.cpp">
+      <Filter>Source\SoulLikeProject\private\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Character\WarriorHeroCharacter.cpp">
+      <Filter>Source\SoulLikeProject\private\Character</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Components">
+      <UniqueIdentifier>{216736E0-E783-36C8-A21A-18D5FB7293AD}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\EnemyCombatComponent.cpp">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\PawnExtensionComponentBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Components</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\EnemyCombatComponent.h">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\HeroCombatComponent.cpp">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\HeroCombatComponent.h">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Combat\PawnCombatComponent.cpp">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Combat\PawnCombatComponent.h">
-      <Filter>Source\SoulLikeProject\Components\Combat</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Components\Input">
-      <UniqueIdentifier>{DD1C6D54-7C0C-37B2-8031-0C0021D86231}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\Components\Combat">
+      <UniqueIdentifier>{228B12F2-24AD-3251-93BA-7A19E422536E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Components\Input\KimchiInputComponent.cpp">
-      <Filter>Source\SoulLikeProject\Components\Input</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Combat\EnemyCombatComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\Combat</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Components\Input\KimchiInputComponent.h">
-      <Filter>Source\SoulLikeProject\Components\Input</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Controller">
-      <UniqueIdentifier>{00162734-8879-3518-895A-03B7DD64EF9A}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Combat\HeroCombatComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Combat\PawnCombatComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\Combat</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Components\Input">
+      <UniqueIdentifier>{0747BA1C-ACB5-367C-8991-ECBA55B45F11}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Controller\KimchiHeroController.cpp">
-      <Filter>Source\SoulLikeProject\Controller</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Input\WarriorInputComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\Input</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Controller\KimchiHeroController.h">
-      <Filter>Source\SoulLikeProject\Controller</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\DataAssets">
-      <UniqueIdentifier>{032FE61F-8CA3-3ACB-8824-855E0C6EFEF8}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\Controller">
+      <UniqueIdentifier>{0EEC872F-C792-346F-B2D4-471D48E11F23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\SoulLikeProject\DataAssets\Input">
-      <UniqueIdentifier>{338A8683-E371-395A-8456-68A89506D57D}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Controller\WarriorHeroController.cpp">
+      <Filter>Source\SoulLikeProject\private\Controller</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\DataAssets">
+      <UniqueIdentifier>{70D510DC-3C83-3AE1-8B68-E9551ABCB13E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.cpp">
-      <Filter>Source\SoulLikeProject\DataAssets\Input</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\Input\DataAsset_InputConfig.h">
-      <Filter>Source\SoulLikeProject\DataAssets\Input</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\DataAssets\StartUpData">
-      <UniqueIdentifier>{C7DCC4B8-5871-30D3-B558-1E5C658D42AE}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\DataAssets\Input">
+      <UniqueIdentifier>{38D5E953-F2F5-3A52-8680-01D594E26F4B}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_EnemyStartUpData.cpp">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <Filter>Source\SoulLikeProject\private\DataAssets\Input</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_EnemyStartUpData.h">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.cpp">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_KimchiStartUpData.h">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_StartUpDataBase.cpp">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\DataAssets\StartUpData\DataAsset_StartUpDataBase.h">
-      <Filter>Source\SoulLikeProject\DataAssets\StartUpData</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\GameMode">
-      <UniqueIdentifier>{317E8FBC-1465-335F-BB32-CDFBD4E7D2A7}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\DataAssets\StartUpData">
+      <UniqueIdentifier>{4E93AEA4-FAAA-374C-869D-B55ECF87F6B4}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.cpp">
-      <Filter>Source\SoulLikeProject\GameMode</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\DataAssets\StartUpData\DataAsset_EnemyStartUpData.cpp">
+      <Filter>Source\SoulLikeProject\private\DataAssets\StartUpData</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\GameMode\KimchiGameModeBase.h">
-      <Filter>Source\SoulLikeProject\GameMode</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\Items">
-      <UniqueIdentifier>{73A53973-7BE0-367A-8325-702DBE6D5F5B}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\DataAssets\StartUpData\DataAsset_HeroStartUpData.cpp">
+      <Filter>Source\SoulLikeProject\private\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\DataAssets\StartUpData\DataAsset_StartUpDataBase.cpp">
+      <Filter>Source\SoulLikeProject\private\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\GameMode">
+      <UniqueIdentifier>{CA00BC80-316D-37A1-AD7A-71BCF90D24B0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\SoulLikeProject\Items\Weapons">
-      <UniqueIdentifier>{75F7146B-0067-3136-99D0-B2DE4678D947}</UniqueIdentifier>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorGameModeBase.cpp">
+      <Filter>Source\SoulLikeProject\private\GameMode</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Items">
+      <UniqueIdentifier>{267CB591-CD66-373D-988D-F41F085BEC7A}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiHeroWeapon.cpp">
-      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiHeroWeapon.h">
-      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiWeaponBase.cpp">
-      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\Items\Weapons\KimchiWeaponBase.h">
-      <Filter>Source\SoulLikeProject\Items\Weapons</Filter>
-    </ClInclude>
-    <Filter Include="Source\SoulLikeProject\KimchiTypes">
-      <UniqueIdentifier>{0C4CE6C4-6691-355F-83B0-2B6FD34BEB5D}</UniqueIdentifier>
+    <Filter Include="Source\SoulLikeProject\private\Items\Weapons">
+      <UniqueIdentifier>{CAB19D75-B993-3A93-B096-C5912189A894}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\SoulLikeProject\KimchiTypes\KimchiStructTypes.cpp">
-      <Filter>Source\SoulLikeProject\KimchiTypes</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorHeroWeapon.cpp">
+      <Filter>Source\SoulLikeProject\private\Items\Weapons</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\SoulLikeProject\KimchiTypes\KimchiStructTypes.h">
-      <Filter>Source\SoulLikeProject\KimchiTypes</Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorWeaponBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Items\Weapons</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\WarriorTypes">
+      <UniqueIdentifier>{86777212-FB9D-389D-AC33-148AF03F8745}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorStructTypes.cpp">
+      <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\public">
+      <UniqueIdentifier>{EFB0BE60-5112-3AB0-AEEB-D0EEDE662B45}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorFunctionLibrary.h">
+      <Filter>Source\SoulLikeProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameplayTags.h">
+      <Filter>Source\SoulLikeProject\public</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AbilitySystem">
+      <UniqueIdentifier>{C991C6A8-2B8D-3A62-A999-D74E04471F85}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAbilitySystemComponent.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAttributeSet.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AbilitySystem\Abilities">
+      <UniqueIdentifier>{410D1FB9-60D2-39A0-8687-B7F4C5A90FE6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AnimInstances">
+      <UniqueIdentifier>{1473AF55-8A57-3C28-8A9A-002C1163CC3E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorBaseAnimInstance.h">
+      <Filter>Source\SoulLikeProject\public\AnimInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorCharacterAnimInstance.h">
+      <Filter>Source\SoulLikeProject\public\AnimInstances</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AnimInstances\WarriorHero">
+      <UniqueIdentifier>{BD3C1E54-E610-31F8-BFA5-C52B342B95F5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorHero\WarriorHeroAnimInstance.h">
+      <Filter>Source\SoulLikeProject\public\AnimInstances\WarriorHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AnimInstances\WarriorHero\WarriorHeroLinkedLayer.h">
+      <Filter>Source\SoulLikeProject\public\AnimInstances\WarriorHero</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Character">
+      <UniqueIdentifier>{30C74732-7D2E-308B-B101-0C0B5CC369D4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorBaseCharacter.h">
+      <Filter>Source\SoulLikeProject\public\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorEnemyCharacter.h">
+      <Filter>Source\SoulLikeProject\public\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Character\WarriorHeroCharacter.h">
+      <Filter>Source\SoulLikeProject\public\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Components">
+      <UniqueIdentifier>{2AE7D279-D5C8-3FA9-82C5-D18C1C43FBFA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\PawnExtensionComponentBase.h">
+      <Filter>Source\SoulLikeProject\public\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Components\Combat">
+      <UniqueIdentifier>{803326D4-AEDC-362A-8539-338130C5DF43}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Combat\EnemyCombatComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Combat\HeroCombatComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Combat\PawnCombatComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Components\Input">
+      <UniqueIdentifier>{48181F81-3A1A-3B83-905A-B0342751FE6F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Input\WarriorInputComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Controller">
+      <UniqueIdentifier>{1992D2A7-D1E7-3B23-8899-B7DFA0CD9D5B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Controller\WarriorHeroController.h">
+      <Filter>Source\SoulLikeProject\public\Controller</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\DataAssets">
+      <UniqueIdentifier>{163F2B6D-0990-3FCA-B5EA-9BDF4B7A5555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SoulLikeProject\public\DataAssets\Input">
+      <UniqueIdentifier>{ADB4DA2B-1951-3108-8B3F-F342EE82A876}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\Input\DataAsset_InputConfig.h">
+      <Filter>Source\SoulLikeProject\public\DataAssets\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\DataAssets\StartUpData">
+      <UniqueIdentifier>{0731F26F-CAEB-31FD-80CE-7D4D67DC6D43}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_EnemyStartUpData.h">
+      <Filter>Source\SoulLikeProject\public\DataAssets\StartUpData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_HeroStartUpData.h">
+      <Filter>Source\SoulLikeProject\public\DataAssets\StartUpData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_StartUpDataBase.h">
+      <Filter>Source\SoulLikeProject\public\DataAssets\StartUpData</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\GameMode">
+      <UniqueIdentifier>{C07481DC-A6BA-38D8-A8C1-9B37D350080A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorGameModeBase.h">
+      <Filter>Source\SoulLikeProject\public\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Items">
+      <UniqueIdentifier>{CA8613A4-0A94-36E4-AEF9-C721C518FEFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SoulLikeProject\public\Items\Weapons">
+      <UniqueIdentifier>{7A6AE1F8-C256-320C-803C-5D104EB0D2F5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorHeroWeapon.h">
+      <Filter>Source\SoulLikeProject\public\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorWeaponBase.h">
+      <Filter>Source\SoulLikeProject\public\Items\Weapons</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\WarriorTypes">
+      <UniqueIdentifier>{0790AFCC-802D-35CC-8D3F-7A5C8372AB52}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorStructTypes.h">
+      <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

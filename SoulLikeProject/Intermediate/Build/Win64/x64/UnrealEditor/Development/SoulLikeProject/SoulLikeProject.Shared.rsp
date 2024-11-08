@@ -1,4 +1,5 @@
 /I "."
+/I "C:\git\KimchiSoul\SoulLikeProject\Source\SoulLikeProject\Private"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT"
 /I "Runtime\Engine\Classes"
 /I "Runtime\Engine\Public"
@@ -292,6 +293,7 @@
 /I "..\Plugins\Runtime\DataRegistry\Source\DataRegistry\Public"
 /I "C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\UnrealEditor\Inc\SoulLikeProject\UHT"
 /I "C:\git\KimchiSoul\SoulLikeProject\Source"
+/I "C:\git\KimchiSoul\SoulLikeProject\Source\SoulLikeProject\Public"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"
