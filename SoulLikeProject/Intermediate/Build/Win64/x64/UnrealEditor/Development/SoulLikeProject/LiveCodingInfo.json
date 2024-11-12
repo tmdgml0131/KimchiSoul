@@ -41,9 +41,10 @@
 			"WarriorHeroLinkedLayer.cpp.obj",
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
+			"WarriorBaseCharacter.cpp.obj",
+			"WarriorEnemyCharacter.cpp.obj",
+			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
-			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -52,17 +53,16 @@
 			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"WarriorGameModeBase.cpp.obj",
+			"PawnCombatInterface.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
-			"WarriorWeaponBase.cpp.obj",
-			"WarriorGameplayTags.cpp.obj",
+			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorBaseCharacter.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj",
-			"PawnCombatInterface.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
+			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
-			"WarriorEnumTypes.cpp.obj"
+			"WarriorGameplayTags.cpp.obj"
 		]
 	}
 }
