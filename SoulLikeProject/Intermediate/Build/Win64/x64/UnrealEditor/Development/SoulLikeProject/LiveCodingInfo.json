@@ -34,7 +34,6 @@
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
-			"WarriorHeroGameplayAbility.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
@@ -45,6 +44,8 @@
 			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -55,13 +56,12 @@
 			"WarriorGameModeBase.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
+			"WarriorWeaponBase.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
-			"PawnCombatComponent.cpp.obj",
-			"WarriorWeaponBase.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorHeroGameplayAbility.cpp.obj",
 			"WarriorGameplayTags.cpp.obj"
 		]
 	}
