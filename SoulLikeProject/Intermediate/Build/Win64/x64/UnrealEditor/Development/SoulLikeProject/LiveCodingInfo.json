@@ -34,8 +34,9 @@
 			"WarriorStructTypes.gen.cpp.obj",
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
+			"WarriorGameplayAbility.cpp.obj",
+			"WarriorHeroGameplayAbility.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
-			"WarriorAttributeSet.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
 			"WarriorHeroLinkedLayer.cpp.obj",
 			"WarriorBaseAnimInstance.cpp.obj",
@@ -44,6 +45,7 @@
 			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
@@ -57,14 +59,12 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
-			"SoulLikeProject.cpp.obj",
-			"WarriorGameplayAbility.cpp.obj",
-			"WarriorHeroGameplayAbility.cpp.obj",
-			"GEExecCalc_DamageTaken.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
-			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
-			"WarriorStructTypes.cpp.obj"
+			"WarriorStructTypes.cpp.obj",
+			"SoulLikeProject.cpp.obj",
+			"GEExecCalc_DamageTaken.cpp.obj",
+			"WarriorAttributeSet.cpp.obj",
+			"WarriorGameplayTags.cpp.obj"
 		]
 	}
 }
