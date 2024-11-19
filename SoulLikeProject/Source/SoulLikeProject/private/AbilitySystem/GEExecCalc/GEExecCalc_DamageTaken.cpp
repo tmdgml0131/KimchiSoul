@@ -93,7 +93,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 	// HeavyAttack Combo Dealt
 	if(UsedHeavyAttackComboCount != 0)
 	{
-		// 15% for each ComboCount
+		// 25% for each ComboCount
 		const float DamageIncreasePercentHeavy = (UsedHeavyAttackComboCount - 1) * 0.25f + 1.f;
 
 		BaseDamage *= DamageIncreasePercentHeavy;
@@ -101,7 +101,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 
 	// Damage Application Rule
 	const float FinalDamageDone = BaseDamage * SourceAttackPower / TargetDefensePower;
-	UE_LOG(LogTemp, Warning, TEXT("%f"), FinalDamageDone);
+	
 	if(FinalDamageDone > 0.f)
 	{
 		OutExecutionOutput.AddOutputModifier(FGameplayModifierEvaluatedData(GetWarriorDamageCapture().DamageTakenProperty, EGameplayModOp::Override, FinalDamageDone));
