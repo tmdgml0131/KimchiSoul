@@ -38,7 +38,6 @@
 			"WarriorHeroGameplayAbility.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
-			"WarriorAttributeSet.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
 			"WarriorHeroLinkedLayer.cpp.obj",
 			"WarriorBaseAnimInstance.cpp.obj",
@@ -63,6 +62,7 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"SoulLikeProject.cpp.obj",
+			"WarriorAttributeSet.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"WarriorGameplayTags.cpp.obj"
 		]

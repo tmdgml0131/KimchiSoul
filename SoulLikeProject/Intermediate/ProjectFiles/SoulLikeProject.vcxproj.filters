@@ -25,6 +25,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -69,6 +72,12 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorHeroGameplayAbility.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\AbilitySystem\GEExecCalc">
+      <UniqueIdentifier>{FA7CFA80-CE48-3674-B041-9F8DAE7BD73C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\GEExecCalc</Filter>
     </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\AnimInstances">
       <UniqueIdentifier>{02340E0C-30B4-3496-9943-DA087994436C}</UniqueIdentifier>
@@ -178,6 +187,9 @@
     <Filter Include="Source\SoulLikeProject\private\WarriorTypes">
       <UniqueIdentifier>{86777212-FB9D-389D-AC33-148AF03F8745}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorEnumTypes.cpp">
+      <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorStructTypes.cpp">
       <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
     </ClCompile>
@@ -210,6 +222,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AbilitySystem\GEExecCalc">
+      <UniqueIdentifier>{438B114E-26E6-3CA6-B85B-1EC266BAF002}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\GEExecCalc</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\AnimInstances">
       <UniqueIdentifier>{1473AF55-8A57-3C28-8A9A-002C1163CC3E}</UniqueIdentifier>
@@ -319,6 +337,9 @@
     <Filter Include="Source\SoulLikeProject\public\WarriorTypes">
       <UniqueIdentifier>{0790AFCC-802D-35CC-8D3F-7A5C8372AB52}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorEnumTypes.h">
+      <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorStructTypes.h">
       <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
     </ClInclude>
