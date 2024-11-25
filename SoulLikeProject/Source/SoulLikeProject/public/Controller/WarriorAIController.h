@@ -6,6 +6,9 @@
 #include "AIController.h"
 #include "WarriorAIController.generated.h"
 
+struct FAIStimulus;
+class UAIPerceptionComponent;
+class UAISenseConfig_Sight;
 /**
  * 
  */
@@ -16,4 +19,15 @@ class SOULLIKEPROJECT_API AWarriorAIController : public AAIController
 
 public:
 	AWarriorAIController(const FObjectInitializer& ObjectInitializer);
+
+	virtual ETeamAttitude::Type GetTeamAttitudeTowards(const AActor& Other) const override;
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UAIPerceptionComponent* EnemyPerceptionComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UAISenseConfig_Sight* AISenseConfig_Sight;
+
+	UFUNCTION()
+	virtual void OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus);
 };

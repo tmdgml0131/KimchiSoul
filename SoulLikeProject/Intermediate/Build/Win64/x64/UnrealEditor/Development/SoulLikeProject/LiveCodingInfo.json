@@ -58,8 +58,8 @@
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
+			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
-			"WarriorHeroController.cpp.obj",
 			"DataAsset_InputConfig.cpp.obj",
 			"DataAsset_EnemyStartUpData.cpp.obj",
 			"DataAsset_HeroStartUpData.cpp.obj",
@@ -72,11 +72,11 @@
 			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
+			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroUIComponent.cpp.obj",
 			"WarriorAIController.cpp.obj",
-			"WarriorStructTypes.cpp.obj"
+			"WarriorHeroController.cpp.obj"
 		]
 	}
 }
