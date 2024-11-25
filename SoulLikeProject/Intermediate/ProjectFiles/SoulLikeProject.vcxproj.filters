@@ -133,9 +133,24 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Input\WarriorInputComponent.cpp">
       <Filter>Source\SoulLikeProject\private\Components\Input</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Components\UI">
+      <UniqueIdentifier>{67697F76-FD18-3FD4-955B-D5883D023EEF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\UI\EnemyUIComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\UI\HeroUIComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\UI\PawnUIComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\UI</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Controller">
       <UniqueIdentifier>{0EEC872F-C792-346F-B2D4-471D48E11F23}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Controller\WarriorAIController.cpp">
+      <Filter>Source\SoulLikeProject\private\Controller</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Controller\WarriorHeroController.cpp">
       <Filter>Source\SoulLikeProject\private\Controller</Filter>
     </ClCompile>
@@ -172,6 +187,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Interfaces\PawnCombatInterface.cpp">
       <Filter>Source\SoulLikeProject\private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Interfaces\PawnUIInterface.cpp">
+      <Filter>Source\SoulLikeProject\private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Items">
       <UniqueIdentifier>{267CB591-CD66-373D-988D-F41F085BEC7A}</UniqueIdentifier>
     </Filter>
@@ -192,6 +210,12 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorStructTypes.cpp">
       <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
+    </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Widgets">
+      <UniqueIdentifier>{B25A31E0-42E8-3847-ADE0-9791E379CC02}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Widgets\WarriorWidgetBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Widgets</Filter>
     </ClCompile>
     <Filter Include="Source\SoulLikeProject\public">
       <UniqueIdentifier>{EFB0BE60-5112-3AB0-AEEB-D0EEDE662B45}</UniqueIdentifier>
@@ -283,9 +307,24 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Input\WarriorInputComponent.h">
       <Filter>Source\SoulLikeProject\public\Components\Input</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Components\UI">
+      <UniqueIdentifier>{82732726-BFE8-35D4-9EBA-8F4CFF67F4FA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\UI\EnemyUIComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\UI\HeroUIComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\UI\PawnUIComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\UI</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Controller">
       <UniqueIdentifier>{1992D2A7-D1E7-3B23-8899-B7DFA0CD9D5B}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Controller\WarriorAIController.h">
+      <Filter>Source\SoulLikeProject\public\Controller</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Controller\WarriorHeroController.h">
       <Filter>Source\SoulLikeProject\public\Controller</Filter>
     </ClInclude>
@@ -322,6 +361,9 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnCombatInterface.h">
       <Filter>Source\SoulLikeProject\public\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnUIInterface.h">
+      <Filter>Source\SoulLikeProject\public\Interfaces</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Items">
       <UniqueIdentifier>{CA8613A4-0A94-36E4-AEF9-C721C518FEFC}</UniqueIdentifier>
     </Filter>
@@ -342,6 +384,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorStructTypes.h">
       <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Widgets">
+      <UniqueIdentifier>{F5D41DF8-3A31-3DA1-84F9-F19147DAB5FD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Widgets\WarriorWidgetBase.h">
+      <Filter>Source\SoulLikeProject\public\Widgets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
