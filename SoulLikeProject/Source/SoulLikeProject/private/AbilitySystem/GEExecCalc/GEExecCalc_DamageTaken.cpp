@@ -28,7 +28,7 @@ static const FWarriorDamageCapture& GetWarriorDamageCapture()
 
 UGEExecCalc_DamageTaken::UGEExecCalc_DamageTaken()
 {
-	// Slow Way
+	// Deprecated Way due to efficiency issue
 	//FProperty* AttackPowerProperty = FindFieldChecked<FProperty>(UWarriorAttributeSet::StaticClass(), GET_MEMBER_NAME_CHECKED(UWarriorAttributeSet, AttackPower));
 
 	// Source == Player
@@ -94,7 +94,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 	if(UsedHeavyAttackComboCount != 0)
 	{
 		// 25% for each ComboCount
-		const float DamageIncreasePercentHeavy = (UsedHeavyAttackComboCount - 1) * 0.25f + 1.f;
+		const float DamageIncreasePercentHeavy = (UsedHeavyAttackComboCount - 1) * 2.f + 1.f;
 
 		BaseDamage *= DamageIncreasePercentHeavy;
 	}

@@ -42,7 +42,6 @@
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
-			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
@@ -60,6 +59,7 @@
 			"EnemyUIComponent.cpp.obj",
 			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
+			"WarriorHeroController.cpp.obj",
 			"DataAsset_InputConfig.cpp.obj",
 			"DataAsset_EnemyStartUpData.cpp.obj",
 			"DataAsset_HeroStartUpData.cpp.obj",
@@ -75,8 +75,8 @@
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorAIController.cpp.obj",
-			"WarriorHeroController.cpp.obj"
+			"GEExecCalc_DamageTaken.cpp.obj",
+			"WarriorAIController.cpp.obj"
 		]
 	}
 }
