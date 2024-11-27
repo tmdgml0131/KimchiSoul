@@ -79,6 +79,12 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\GEExecCalc</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\AI">
+      <UniqueIdentifier>{AB7BDFC7-1262-3A31-9033-C874C3C09B11}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AI\BTService_OrientToTargetActor.cpp">
+      <Filter>Source\SoulLikeProject\private\AI</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\AnimInstances">
       <UniqueIdentifier>{02340E0C-30B4-3496-9943-DA087994436C}</UniqueIdentifier>
     </Filter>
@@ -252,6 +258,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\GEExecCalc</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AI">
+      <UniqueIdentifier>{2253AE70-516A-3624-AFD5-52460EA430FB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AI\BTService_OrientToTargetActor.h">
+      <Filter>Source\SoulLikeProject\public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\AnimInstances">
       <UniqueIdentifier>{1473AF55-8A57-3C28-8A9A-002C1163CC3E}</UniqueIdentifier>
