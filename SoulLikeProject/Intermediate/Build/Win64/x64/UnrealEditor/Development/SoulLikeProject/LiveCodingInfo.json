@@ -46,6 +46,7 @@
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
+			"BTService_OrientToTargetActor.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
 			"WarriorHeroLinkedLayer.cpp.obj",
 			"WarriorBaseAnimInstance.cpp.obj",
@@ -77,8 +78,7 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj",
-			"BTService_OrientToTargetActor.cpp.obj"
+			"SoulLikeProject.cpp.obj"
 		]
 	}
 }
