@@ -62,7 +62,6 @@
 			"EnemyUIComponent.cpp.obj",
 			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
-			"WarriorAIController.cpp.obj",
 			"WarriorHeroController.cpp.obj",
 			"DataAsset_InputConfig.cpp.obj",
 			"DataAsset_EnemyStartUpData.cpp.obj",
@@ -78,7 +77,8 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj"
+			"SoulLikeProject.cpp.obj",
+			"WarriorAIController.cpp.obj"
 		]
 	}
 }
