@@ -2,6 +2,8 @@
 
 
 #include "Items/Weapons/WarriorWeaponBase.h"
+
+#include "WarriorFunctionLibrary.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -26,10 +28,10 @@ void AWarriorWeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* Overlap
 	APawn* WeaponOwningPawn = GetInstigator<APawn>();
 
 	checkf(WeaponOwningPawn, TEXT("Forgot to assign an instigator of the weapon %s"), *GetName());
-	
+
 	if(APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if(WeaponOwningPawn != HitPawn)
+		if(UWarriorFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
@@ -44,7 +46,7 @@ void AWarriorWeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* Overlappe
 	
 	if(APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if(WeaponOwningPawn != HitPawn)
+		if(UWarriorFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponPulledFromTarget.ExecuteIfBound(OtherActor);
 		}

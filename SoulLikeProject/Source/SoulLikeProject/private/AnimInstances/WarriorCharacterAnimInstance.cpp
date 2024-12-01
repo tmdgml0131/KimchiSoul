@@ -2,6 +2,8 @@
 
 
 #include "AnimInstances/WarriorCharacterAnimInstance.h"
+
+#include "KismetAnimationLibrary.h"
 #include "Character/WarriorBaseCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -27,4 +29,6 @@ void UWarriorCharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaS
 	bHasAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
 
 	bIsInAir = OwningCharacter->GetCharacterMovement()->IsFalling();
+
+	LocomotionDirection = UKismetAnimationLibrary::CalculateDirection(OwningCharacter->GetVelocity(), OwningCharacter->GetActorRotation());
 }
