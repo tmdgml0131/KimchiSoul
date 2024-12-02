@@ -94,7 +94,9 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
-	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
+	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Started, this, &ThisClass::Input_DashStarted);
+	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Completed, this, &ThisClass::Input_DashFinished);
+	//WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
 
 	WarriorInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
@@ -135,7 +137,7 @@ void AWarriorHeroCharacter::Input_Move(const FInputActionValue& InputActionValue
 void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 {
 	const FVector2D LookAxisVector = InputActionValue.Get<FVector2D>();
-
+	
 	if(LookAxisVector.X != 0.f)
 	{
 		AddControllerYawInput(LookAxisVector.X);
@@ -150,6 +152,20 @@ void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue
 void AWarriorHeroCharacter::Input_Jump(const FInputActionValue& InputActionValue)
 {
 	Super::Jump();
+}
+
+void AWarriorHeroCharacter::Input_DashStarted(const FInputActionValue& InputActionValue)
+{
+	if(!GetCharacterMovement()) return;
+	
+	GetCharacterMovement()->MaxWalkSpeed = 600.f;
+}
+
+void AWarriorHeroCharacter::Input_DashFinished(const FInputActionValue& InputActionValue)
+{
+	if(!GetCharacterMovement()) return;
+	
+	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 }
 
 void AWarriorHeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
