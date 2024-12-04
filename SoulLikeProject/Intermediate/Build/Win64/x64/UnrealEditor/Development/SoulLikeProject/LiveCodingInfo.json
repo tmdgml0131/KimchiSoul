@@ -55,6 +55,7 @@
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
 			"WarriorEnemyCharacter.cpp.obj",
+			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
@@ -74,13 +75,12 @@
 			"PawnUIInterface.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj",
-			"WarriorGameplayTags.cpp.obj"
+			"WarriorFunctionLibrary.cpp.obj"
 		]
 	}
 }
