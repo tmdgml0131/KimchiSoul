@@ -50,7 +50,8 @@ void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDama
 	if(ToggleDamageType == EToggleDamageType::CurrentEquippedWeapon)
 	{
 		AWarriorWeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
-		check(WeaponToToggle);
+		
+		if(!WeaponToToggle) return;
 
 		if(bShouldEnable)
 		{
