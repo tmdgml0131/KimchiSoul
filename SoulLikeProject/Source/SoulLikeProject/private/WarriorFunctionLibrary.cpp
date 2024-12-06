@@ -93,7 +93,7 @@ float UWarriorFunctionLibrary::GetScalableFloatValueAtLevel(const FScalableFloat
 FGameplayTag UWarriorFunctionLibrary::ComputeHitReactDirectionTag(AActor* InAttacker, AActor* InVictim,
 	float& OutAngleDifference)
 {
-	if(!InAttacker && !InVictim) return FGameplayTag();
+	if(!InAttacker || !InVictim) return FGameplayTag();
 
 	const FVector VictimForward = InVictim->GetActorForwardVector();
 	const FVector VictimToAttackerNormalized = (InAttacker->GetActorLocation() - InVictim->GetActorLocation()).GetSafeNormal();
@@ -127,4 +127,13 @@ FGameplayTag UWarriorFunctionLibrary::ComputeHitReactDirectionTag(AActor* InAtta
 	}
 	
 	return FGameplayTag();
+}
+
+bool UWarriorFunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
+{
+	if(!InAttacker || !InDefender) return false;
+
+	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefender->GetActorForwardVector());
+
+	return DotResult < -0.1f;
 }
