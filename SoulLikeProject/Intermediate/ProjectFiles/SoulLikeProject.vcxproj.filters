@@ -64,6 +64,9 @@
     <Filter Include="Source\SoulLikeProject\private\AbilitySystem\Abilities">
       <UniqueIdentifier>{D2756CC7-3AF6-3E49-BDAB-61454454EC61}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -247,6 +250,9 @@
     <Filter Include="Source\SoulLikeProject\public\AbilitySystem\Abilities">
       <UniqueIdentifier>{410D1FB9-60D2-39A0-8687-B7F4C5A90FE6}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
     </ClInclude>
