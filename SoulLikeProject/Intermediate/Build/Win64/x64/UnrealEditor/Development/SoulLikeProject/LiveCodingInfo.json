@@ -46,6 +46,7 @@
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
+			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
@@ -83,8 +84,7 @@
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroGameplayAbility_TargetLock.cpp.obj",
-			"AbilityTask_ExecuteTaskOnTick.cpp.obj"
+			"HeroGameplayAbility_TargetLock.cpp.obj"
 		]
 	}
 }

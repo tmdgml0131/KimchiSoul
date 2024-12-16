@@ -30,6 +30,8 @@ private:
 	void DrawTargetLockWidget();
 	void SetTargetLockWidgetPosition();
 	void CancelTargetLockAbility();
+	void InitTargetLockMovement();
+	void ResetTargetLockMovement();
 	void CleanUp();
 
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
@@ -49,6 +51,9 @@ private:
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	float TargetLockRotationInterpSpeed = 5.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
+	float TargetLockMaxWalkSpeed = 150.f;
 	
 	UPROPERTY()
 	TArray<AActor*> AvailableActorsToLock;
@@ -61,4 +66,7 @@ private:
 
 	UPROPERTY()
 	FVector2D TargetLockWidgetSize = FVector2d::ZeroVector;
+
+	UPROPERTY()
+	float CachedDefaultMaxWalkSpeed = 0.f;
 };
