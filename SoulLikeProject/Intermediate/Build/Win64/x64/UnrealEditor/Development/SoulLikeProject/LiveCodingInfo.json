@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SoulLikeProject.cpp.obj": [
+			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
 			"BTService_OrientToTargetActor.gen.cpp.obj",
 			"BTTask_RotateToFaceTarget.gen.cpp.obj",
 			"DataAsset_EnemyStartUpData.gen.cpp.obj",
@@ -46,6 +47,7 @@
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
+			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj",
@@ -76,13 +78,13 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
-			"WarriorAbilitySystemComponent.cpp.obj",
-			"WarriorGameplayTags.cpp.obj"
+			"AbilityTask_ExecuteTaskOnTick.cpp.obj"
 		]
 	}
 }
