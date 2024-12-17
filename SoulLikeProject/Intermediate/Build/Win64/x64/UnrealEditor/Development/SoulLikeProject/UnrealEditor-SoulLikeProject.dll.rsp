@@ -37,7 +37,9 @@
 /FUNCTIONPADMIN:6
 "E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Module.SoulLikeProject.cpp.obj"
+"E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\WarriorGameplayTags.cpp.obj"
 "E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\HeroGameplayAbility_TargetLock.cpp.obj"
+"E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\WarriorHeroCharacter.cpp.obj"
 "E:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"

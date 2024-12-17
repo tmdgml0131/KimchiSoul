@@ -3,6 +3,7 @@
 
 #include "AbilitySystem/Abilities/HeroGameplayAbility_TargetLock.h"
 
+#include "EnhancedInputSubsystems.h"
 #include "WarriorFunctionLibrary.h"
 #include "WarriorGameplayTags.h"
 #include "Blueprint/WidgetLayoutLibrary.h"
@@ -36,7 +37,8 @@ void UHeroGameplayAbility_TargetLock::EndAbility(const FGameplayAbilitySpecHandl
 	bool bReplicateEndAbility, bool bWasCancelled)
 {
 	ResetTargetLockMovement();
-	CleanUp();
+	ResetTargetLockMappingContext();
+	CleanUpCachedValue();
 	Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);
 }
 
@@ -93,6 +95,7 @@ void UHeroGameplayAbility_TargetLock::TryLockOnTarget()
 	{
 		DrawTargetLockWidget();
 		InitTargetLockMovement();
+		InitTargetLockMappingContext();
 	}
 	else
 	{
@@ -112,6 +115,29 @@ void UHeroGameplayAbility_TargetLock::InitTargetLockMovement()
 	GetHeroCharacterFromActorInfo()->GetCharacterMovement()->MaxWalkSpeed = TargetLockMaxWalkSpeed;
 }
 
+void UHeroGameplayAbility_TargetLock::InitTargetLockMappingContext()
+{
+	if(!GetHeroControllerFromActorInfo()) return;
+	
+	const ULocalPlayer* LocalPlayer = GetHeroControllerFromActorInfo()->GetLocalPlayer();
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(LocalPlayer);
+	if(!Subsystem) return;
+
+	// Priority of Look Action is set to 0, thus set the priority to 3 just in case
+	Subsystem->AddMappingContext(TargetLockMappingContext, 3);
+}
+
+void UHeroGameplayAbility_TargetLock::ResetTargetLockMappingContext()
+{
+	if(!GetHeroControllerFromActorInfo()) return;
+	
+	const ULocalPlayer* LocalPlayer = GetHeroControllerFromActorInfo()->GetLocalPlayer();
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(LocalPlayer);
+	if(!Subsystem) return;
+
+	Subsystem->RemoveMappingContext(TargetLockMappingContext);
+}
+
 void UHeroGameplayAbility_TargetLock::ResetTargetLockMovement()
 {
 	if(CachedDefaultMaxWalkSpeed > 0.f)
@@ -120,7 +146,7 @@ void UHeroGameplayAbility_TargetLock::ResetTargetLockMovement()
 	}
 }
 
-void UHeroGameplayAbility_TargetLock::CleanUp()
+void UHeroGameplayAbility_TargetLock::CleanUpCachedValue()
 {
 	AvailableActorsToLock.Empty();
 	CurrentLockedActor = nullptr;

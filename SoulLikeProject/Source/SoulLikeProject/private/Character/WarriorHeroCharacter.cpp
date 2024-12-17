@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "WarriorFunctionLibrary.h"
 #include "DataAssets/Input/DataAsset_InputConfig.h"
 #include "Components/Input/WarriorInputComponent.h"
 #include "WarriorGameplayTags.h"
@@ -96,6 +97,8 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Started, this, &ThisClass::Input_DashStarted);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Completed, this, &ThisClass::Input_DashFinished);
+	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_SwitchTarget, ETriggerEvent::Triggered, this, &ThisClass::Input_SwitchTargetTriggered);
+	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_SwitchTarget, ETriggerEvent::Completed, this, &ThisClass::Input_SwitchTargetCompleted);
 	//WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
 
 	WarriorInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
@@ -149,6 +152,16 @@ void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue
 	}
 }
 
+void AWarriorHeroCharacter::Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue)
+{
+	
+}
+
+void AWarriorHeroCharacter::Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue)
+{
+	
+}
+
 void AWarriorHeroCharacter::Input_Jump(const FInputActionValue& InputActionValue)
 {
 	Super::Jump();
@@ -164,8 +177,15 @@ void AWarriorHeroCharacter::Input_DashStarted(const FInputActionValue& InputActi
 void AWarriorHeroCharacter::Input_DashFinished(const FInputActionValue& InputActionValue)
 {
 	if(!GetCharacterMovement()) return;
-	
-	GetCharacterMovement()->MaxWalkSpeed = 400.f;
+
+	if(UWarriorFunctionLibrary::NativeDoesActorHaveTag(this, WarriorGameplayTags::Player_Status_TargetLock))
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 200.f;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 400.f;
+	}
 }
 
 void AWarriorHeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
