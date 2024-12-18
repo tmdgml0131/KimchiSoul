@@ -65,6 +65,7 @@ void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
 	const bool bShouldOverrideRotation = 
 	!UWarriorFunctionLibrary::NativeDoesActorHaveTag(HeroCharacter, WarriorGameplayTags::Player_Status_Rolling)
 	&&!UWarriorFunctionLibrary::NativeDoesActorHaveTag(HeroCharacter, WarriorGameplayTags::Player_Status_Blocking)
+	&&!UWarriorFunctionLibrary::NativeDoesActorHaveTag(HeroCharacter, WarriorGameplayTags::Player_Status_Dashing)
 	&&!UWarriorFunctionLibrary::NativeDoesActorHaveTag(HeroCharacter, WarriorGameplayTags::Player_Status_Jumping);
 
 	if(bShouldOverrideRotation)
@@ -75,7 +76,11 @@ void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
 		const FRotator TargetRot = FMath::RInterpTo(CurrentControlRot, LookAtRot, DeltaTime, TargetLockRotationInterpSpeed);
 
 		GetHeroControllerFromActorInfo()->SetControlRotation(FRotator(TargetRot.Pitch, TargetRot.Yaw, 0.f));
-		HeroCharacter->SetActorRotation(FRotator(0.f, TargetRot.Yaw, 0.f));
+		
+		const FRotator CurrentActorRot = HeroCharacter->GetActorRotation();
+		const FRotator SmoothActorRot = FMath::RInterpTo(CurrentActorRot,FRotator(0.f, TargetRot.Yaw, 0.f), DeltaTime, TargetLockActorRotationInterpSpeed);
+		HeroCharacter->SetActorRotation(SmoothActorRot);
+		//HeroCharacter->SetActorRotation(FRotator(0.f, TargetRot.Yaw, 0.f));
 	}
 }
 

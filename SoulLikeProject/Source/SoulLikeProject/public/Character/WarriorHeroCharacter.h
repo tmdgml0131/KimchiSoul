@@ -62,8 +62,8 @@ private:
 	void Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue);
 	void Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue);
 	void Input_Jump(const FInputActionValue& InputActionValue);
-	void Input_DashStarted(const FInputActionValue& InputActionValue);
-	void Input_DashFinished(const FInputActionValue& InputActionValue);
+	//void Input_DashStarted(const FInputActionValue& InputActionValue);
+	//void Input_DashFinished(const FInputActionValue& InputActionValue);
 	
 	void Input_AbilityInputPressed(FGameplayTag InInputTag);
 	void Input_AbilityInputReleased(FGameplayTag InInputTag);

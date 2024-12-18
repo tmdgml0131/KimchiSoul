@@ -48,7 +48,6 @@
 			"WarriorHeroGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
-			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj",
@@ -83,6 +82,7 @@
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
+			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"WarriorGameplayTags.cpp.obj"
 		]

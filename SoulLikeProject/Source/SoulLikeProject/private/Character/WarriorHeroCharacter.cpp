@@ -95,8 +95,8 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
-	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Started, this, &ThisClass::Input_DashStarted);
-	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Completed, this, &ThisClass::Input_DashFinished);
+	//WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Started, this, &ThisClass::Input_DashStarted);
+	//WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Dash, ETriggerEvent::Completed, this, &ThisClass::Input_DashFinished);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_SwitchTarget, ETriggerEvent::Triggered, this, &ThisClass::Input_SwitchTargetTriggered);
 	WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_SwitchTarget, ETriggerEvent::Completed, this, &ThisClass::Input_SwitchTargetCompleted);
 	//WarriorInputComponent->BindNativeInputAction(InputConfigDataAsset, WarriorGameplayTags::InputTag_Jump, ETriggerEvent::Triggered, this, &ThisClass::Input_Jump);
@@ -167,26 +167,26 @@ void AWarriorHeroCharacter::Input_Jump(const FInputActionValue& InputActionValue
 	Super::Jump();
 }
 
-void AWarriorHeroCharacter::Input_DashStarted(const FInputActionValue& InputActionValue)
-{
-	if(!GetCharacterMovement()) return;
-	
-	GetCharacterMovement()->MaxWalkSpeed = 600.f;
-}
-
-void AWarriorHeroCharacter::Input_DashFinished(const FInputActionValue& InputActionValue)
-{
-	if(!GetCharacterMovement()) return;
-
-	if(UWarriorFunctionLibrary::NativeDoesActorHaveTag(this, WarriorGameplayTags::Player_Status_TargetLock))
-	{
-		GetCharacterMovement()->MaxWalkSpeed = 200.f;
-	}
-	else
-	{
-		GetCharacterMovement()->MaxWalkSpeed = 400.f;
-	}
-}
+//void AWarriorHeroCharacter::Input_DashStarted(const FInputActionValue& InputActionValue)
+//{
+//	if(!GetCharacterMovement()) return;
+//	
+//	GetCharacterMovement()->MaxWalkSpeed = 600.f;
+//}
+//
+//void AWarriorHeroCharacter::Input_DashFinished(const FInputActionValue& InputActionValue)
+//{
+//	if(!GetCharacterMovement()) return;
+//
+//	if(UWarriorFunctionLibrary::NativeDoesActorHaveTag(this, WarriorGameplayTags::Player_Status_TargetLock))
+//	{
+//		GetCharacterMovement()->MaxWalkSpeed = 200.f;
+//	}
+//	else
+//	{
+//		GetCharacterMovement()->MaxWalkSpeed = 400.f;
+//	}
+//}
 
 void AWarriorHeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
 {

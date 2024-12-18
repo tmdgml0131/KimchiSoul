@@ -18,6 +18,7 @@ class SOULLIKEPROJECT_API UWarriorAbilitySystemComponent : public UAbilitySystem
 	GENERATED_BODY()
 
 public:
+	// Two Function below are called everytime not only the pressing function is called, but also when ANY ability is called
 	void OnAbilityInputPressed(const FGameplayTag& InInputTag);
 	void OnAbilityInputReleased(const FGameplayTag& InInputTag);
 
