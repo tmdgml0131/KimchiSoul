@@ -8,6 +8,7 @@
 /NODEFAULTLIB
 "C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\SoulLikeProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Module.SoulLikeProject.cpp.obj"
-"C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\HeroGameplayAbility_TargetLock.cpp.obj"
+"C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\BTService_OrientToTargetActor.cpp.obj"
+"C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\WarriorHeroCharacter.cpp.obj"
 "C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\Default.rc2.res"
 /OUT:"C:\git\KimchiSoul\SoulLikeProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\SoulLikeProject\UnrealEditor-SoulLikeProject.lib"
