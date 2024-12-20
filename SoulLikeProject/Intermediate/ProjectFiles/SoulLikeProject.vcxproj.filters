@@ -76,6 +76,12 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorHeroGameplayAbility.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{79048D6C-4CCB-3DFF-A9AA-D1CF8B52C7D9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\AbilityTasks</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\AbilitySystem\GEExecCalc">
       <UniqueIdentifier>{FA7CFA80-CE48-3674-B041-9F8DAE7BD73C}</UniqueIdentifier>
     </Filter>
@@ -205,6 +211,9 @@
     <Filter Include="Source\SoulLikeProject\private\Items">
       <UniqueIdentifier>{267CB591-CD66-373D-988D-F41F085BEC7A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\WarriorProjectileBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Items</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Items\Weapons">
       <UniqueIdentifier>{CAB19D75-B993-3A93-B096-C5912189A894}</UniqueIdentifier>
     </Filter>
@@ -261,6 +270,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{8B54854D-0467-380B-93BB-5EA89D5F6FC7}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\AbilityTasks</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\AbilitySystem\GEExecCalc">
       <UniqueIdentifier>{438B114E-26E6-3CA6-B85B-1EC266BAF002}</UniqueIdentifier>
@@ -391,6 +406,9 @@
     <Filter Include="Source\SoulLikeProject\public\Items">
       <UniqueIdentifier>{CA8613A4-0A94-36E4-AEF9-C721C518FEFC}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\WarriorProjectileBase.h">
+      <Filter>Source\SoulLikeProject\public\Items</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Items\Weapons">
       <UniqueIdentifier>{7A6AE1F8-C256-320C-803C-5D104EB0D2F5}</UniqueIdentifier>
     </Filter>

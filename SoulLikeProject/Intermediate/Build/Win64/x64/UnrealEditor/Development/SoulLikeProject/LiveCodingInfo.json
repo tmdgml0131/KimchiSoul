@@ -40,6 +40,7 @@
 			"WarriorHeroLinkedLayer.gen.cpp.obj",
 			"WarriorHeroWeapon.gen.cpp.obj",
 			"WarriorInputComponent.gen.cpp.obj",
+			"WarriorProjectileBase.gen.cpp.obj",
 			"WarriorStructTypes.gen.cpp.obj",
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorWidgetBase.gen.cpp.obj",
@@ -58,6 +59,7 @@
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
 			"WarriorEnemyCharacter.cpp.obj",
+			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
@@ -78,13 +80,13 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
-			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj"
+			"WarriorProjectileBase.cpp.obj",
+			"WarriorGameplayTags.cpp.obj"
 		]
 	}
 }

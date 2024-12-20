@@ -53,17 +53,14 @@ void UBTService_OrientToTargetActor::TickNode(UBehaviorTreeComponent& OwnerComp,
 		const FRotator TargetRot = FMath::RInterpTo(OwningPawn->GetActorRotation(), LookAtRot, DeltaSeconds, RotationInterpSpeed);
 
 		OwningPawn->SetActorRotation(TargetRot);*/
-
-		// 현재 위치에서 목표 위치를 바라보는 회전값 계산
+		
 		const FRotator LookAtRot = UKismetMathLibrary::FindLookAtRotation(OwningPawn->GetActorLocation(), TargetActor->GetActorLocation());
-        
-		// Yaw만 추출하여 Pitch와 Roll은 0으로 고정
+		
 		const FRotator AdjustedLookAtRot(0.f, LookAtRot.Yaw, 0.f);
 
-		// 현재 회전값과 목표 회전값(Yaw만 적용)을 선형 보간
+		// Interpolation
 		const FRotator TargetRot = FMath::RInterpTo(OwningPawn->GetActorRotation(), AdjustedLookAtRot, DeltaSeconds, RotationInterpSpeed);
 
-		// 캐릭터 회전값 설정
 		OwningPawn->SetActorRotation(TargetRot);
 	}
 }

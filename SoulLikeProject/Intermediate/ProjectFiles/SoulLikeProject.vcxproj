@@ -288,6 +288,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\WarriorHeroGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -369,6 +372,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Interfaces\PawnUIInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\WarriorProjectileBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorHeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -392,6 +398,7 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AI\BTService_OrientToTargetActor.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AI\BTTask_RotateToFaceTarget.h"/>
@@ -419,6 +426,7 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorGameModeBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnUIInterface.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\WarriorProjectileBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorWeaponBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorEnumTypes.h"/>
