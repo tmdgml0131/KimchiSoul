@@ -51,7 +51,7 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 	BP_OnSpawnProjectileHitFX(Hit.ImpactPoint);
 	
 	APawn* HitPawn = Cast<APawn>(OtherActor);
-	if(!HitPawn)// || !UWarriorFunctionLibrary::IsTargetPawnHostile(GetInstigator(), HitPawn))
+	if(!HitPawn || !UWarriorFunctionLibrary::IsTargetPawnHostile(GetInstigator(), HitPawn))
 	{
 		Destroy();
 		return;
