@@ -16,4 +16,5 @@ class SOULLIKEPROJECT_API UEnemyCombatComponent : public UPawnCombatComponent
 
 public:
 	virtual void OnHitTargetActor(AActor* HitActor) override;
+	virtual void ToggleBodyCollisionBoxCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType) override;
 };
