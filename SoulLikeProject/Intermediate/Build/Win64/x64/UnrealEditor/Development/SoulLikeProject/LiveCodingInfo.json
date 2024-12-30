@@ -3,6 +3,7 @@
 	{
 		"Module.SoulLikeProject.cpp.obj": [
 			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
+			"AbilityTask_WaitSpawnEnemies.gen.cpp.obj",
 			"BTService_OrientToTargetActor.gen.cpp.obj",
 			"BTTask_RotateToFaceTarget.gen.cpp.obj",
 			"DataAsset_EnemyStartUpData.gen.cpp.obj",
@@ -44,6 +45,7 @@
 			"WarriorStructTypes.gen.cpp.obj",
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorWidgetBase.gen.cpp.obj",
+			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
@@ -58,8 +60,11 @@
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
+			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
@@ -78,15 +83,12 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
-			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroGameplayAbility_TargetLock.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
-			"EnemyCombatComponent.cpp.obj",
-			"PawnCombatComponent.cpp.obj"
+			"AbilityTask_WaitSpawnEnemies.cpp.obj",
+			"WarriorGameplayTags.cpp.obj"
 		]
 	}
 }

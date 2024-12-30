@@ -82,6 +82,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\AbilityTasks</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\AbilityTasks\AbilityTask_WaitSpawnEnemies.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\AbilityTasks</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\AbilitySystem\GEExecCalc">
       <UniqueIdentifier>{FA7CFA80-CE48-3674-B041-9F8DAE7BD73C}</UniqueIdentifier>
     </Filter>
@@ -275,6 +278,9 @@
       <UniqueIdentifier>{8B54854D-0467-380B-93BB-5EA89D5F6FC7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\AbilityTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\AbilityTasks\AbilityTask_WaitSpawnEnemies.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\AbilityTasks</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\AbilitySystem\GEExecCalc">

@@ -19,7 +19,8 @@ public class SoulLikeProject : ModuleRules
 			"GameplayTasks",
 			"AnimGraphRunTime",
 			"MotionWarping",
-			"Niagara"
+			"Niagara",
+			"NavigationSystem"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
