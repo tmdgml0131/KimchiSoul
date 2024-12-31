@@ -52,7 +52,7 @@
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
-			"WarriorAttributeSet.cpp.obj",
+			"WarriorAbilitySystemComponent.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
@@ -87,7 +87,7 @@
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorAbilitySystemComponent.cpp.obj",
+			"WarriorAttributeSet.cpp.obj",
 			"WarriorGameplayTags.cpp.obj"
 		]
 	}
