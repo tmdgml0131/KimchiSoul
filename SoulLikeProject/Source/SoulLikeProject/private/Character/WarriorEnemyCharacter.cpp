@@ -31,6 +31,7 @@ AWarriorEnemyCharacter::AWarriorEnemyCharacter()
 	EnemyUIComponent = CreateDefaultSubobject<UEnemyUIComponent>(TEXT("EnemyUIComponent"));
 	EnemyHealthWidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("EnemyHealthWidgetComponent"));
 	EnemyHealthWidgetComponent->SetupAttachment(GetMesh());
+	EnemyHealthWidgetComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	LeftHandCollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("LeftHandCollisionBox"));
 	RightHandCollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("RightHandCollisionBox"));

@@ -53,6 +53,7 @@
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
+			"WarriorAttributeSet.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj",
 			"WarriorHeroAnimInstance.cpp.obj",
@@ -60,7 +61,6 @@
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
@@ -79,16 +79,16 @@
 			"WarriorGameModeBase.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
-			"WarriorProjectileBase.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameplayTags.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorAttributeSet.cpp.obj",
-			"WarriorGameplayTags.cpp.obj"
+			"WarriorEnemyCharacter.cpp.obj",
+			"WarriorProjectileBase.cpp.obj"
 		]
 	}
 }
