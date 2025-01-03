@@ -276,6 +276,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\WarriorAttributeSet.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\HeroGameplayAbility_PickUpStones.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -378,10 +381,19 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\WarriorProjectileBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\PickUps\WarriorPickUpBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\PickUps\WarriorStoneBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorHeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorWeaponBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorCountDownAction.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorEnumTypes.cpp">
@@ -397,6 +409,7 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAttributeSet.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\HeroGameplayAbility_PickUpStones.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\WarriorGameplayAbility.h"/>
@@ -431,8 +444,11 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnUIInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\WarriorProjectileBase.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\PickUps\WarriorPickUpBase.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\PickUps\WarriorStoneBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorWeaponBase.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorCountDownAction.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorEnumTypes.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorStructTypes.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Widgets\WarriorWidgetBase.h"/>

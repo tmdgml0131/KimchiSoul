@@ -64,6 +64,9 @@
     <Filter Include="Source\SoulLikeProject\private\AbilitySystem\Abilities">
       <UniqueIdentifier>{D2756CC7-3AF6-3E49-BDAB-61454454EC61}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\HeroGameplayAbility_PickUpStones.cpp">
+      <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
       <Filter>Source\SoulLikeProject\private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -217,6 +220,15 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\WarriorProjectileBase.cpp">
       <Filter>Source\SoulLikeProject\private\Items</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Items\PickUps">
+      <UniqueIdentifier>{6D039530-8C06-3BCE-9F67-04AD73085147}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\PickUps\WarriorPickUpBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Items\PickUps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\PickUps\WarriorStoneBase.cpp">
+      <Filter>Source\SoulLikeProject\private\Items\PickUps</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Items\Weapons">
       <UniqueIdentifier>{CAB19D75-B993-3A93-B096-C5912189A894}</UniqueIdentifier>
     </Filter>
@@ -229,6 +241,9 @@
     <Filter Include="Source\SoulLikeProject\private\WarriorTypes">
       <UniqueIdentifier>{86777212-FB9D-389D-AC33-148AF03F8745}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorCountDownAction.cpp">
+      <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorTypes\WarriorEnumTypes.cpp">
       <Filter>Source\SoulLikeProject\private\WarriorTypes</Filter>
     </ClCompile>
@@ -262,6 +277,9 @@
     <Filter Include="Source\SoulLikeProject\public\AbilitySystem\Abilities">
       <UniqueIdentifier>{410D1FB9-60D2-39A0-8687-B7F4C5A90FE6}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\HeroGameplayAbility_PickUpStones.h">
+      <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h">
       <Filter>Source\SoulLikeProject\public\AbilitySystem\Abilities</Filter>
     </ClInclude>
@@ -415,6 +433,15 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\WarriorProjectileBase.h">
       <Filter>Source\SoulLikeProject\public\Items</Filter>
     </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Items\PickUps">
+      <UniqueIdentifier>{8D53E60A-F816-3A34-811E-3DA56063A399}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\PickUps\WarriorPickUpBase.h">
+      <Filter>Source\SoulLikeProject\public\Items\PickUps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\PickUps\WarriorStoneBase.h">
+      <Filter>Source\SoulLikeProject\public\Items\PickUps</Filter>
+    </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Items\Weapons">
       <UniqueIdentifier>{7A6AE1F8-C256-320C-803C-5D104EB0D2F5}</UniqueIdentifier>
     </Filter>
@@ -427,6 +454,9 @@
     <Filter Include="Source\SoulLikeProject\public\WarriorTypes">
       <UniqueIdentifier>{0790AFCC-802D-35CC-8D3F-7A5C8372AB52}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorCountDownAction.h">
+      <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorTypes\WarriorEnumTypes.h">
       <Filter>Source\SoulLikeProject\public\WarriorTypes</Filter>
     </ClInclude>
