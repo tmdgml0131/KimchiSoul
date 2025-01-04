@@ -1,7 +1,7 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.SoulLikeProject.cpp.obj": [
+		"Module.SoulLikeProject.1.cpp.obj": [
 			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.gen.cpp.obj",
 			"BTService_OrientToTargetActor.gen.cpp.obj",
@@ -31,7 +31,9 @@
 			"WarriorCharacterAnimInstance.gen.cpp.obj",
 			"WarriorEnemyCharacter.gen.cpp.obj",
 			"WarriorEnemyGameplayAbility.gen.cpp.obj",
-			"WarriorEnumTypes.gen.cpp.obj",
+			"WarriorEnumTypes.gen.cpp.obj"
+		],
+		"Module.SoulLikeProject.2.cpp.obj": [
 			"WarriorFunctionLibrary.gen.cpp.obj",
 			"WarriorGameModeBase.gen.cpp.obj",
 			"WarriorGameplayAbility.gen.cpp.obj",
@@ -50,7 +52,7 @@
 			"WarriorWidgetBase.gen.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
-			"WarriorHeroGameplayAbility.cpp.obj",
+			"WarriorGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
@@ -64,14 +66,12 @@
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
 			"WarriorEnemyCharacter.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
-			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
 			"WarriorAIController.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -82,7 +82,15 @@
 			"WarriorGameModeBase.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
+			"WarriorPickUpBase.cpp.obj",
 			"WarriorProjectileBase.cpp.obj",
+			"HeroGameplayAbility_PickUpStones.cpp.obj",
+			"WarriorHeroGameplayAbility.cpp.obj",
+			"WarriorHeroCharacter.cpp.obj",
+			"HeroUIComponent.cpp.obj",
+			"WarriorStoneBase.cpp.obj"
+		],
+		"Module.SoulLikeProject.3.cpp.obj": [
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
@@ -91,10 +99,6 @@
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroGameplayAbility_PickUpStones.cpp.obj",
-			"WarriorGameplayAbility.cpp.obj",
-			"WarriorPickUpBase.cpp.obj",
-			"WarriorStoneBase.cpp.obj",
 			"WarriorGameplayTags.cpp.obj"
 		]
 	}
