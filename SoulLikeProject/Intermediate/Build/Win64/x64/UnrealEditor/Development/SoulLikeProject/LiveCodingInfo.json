@@ -62,17 +62,18 @@
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
-			"BTTask_RotateToFaceTarget.cpp.obj",
+			"BTTask_RotateToFaceTarget.cpp.obj"
+		],
+		"Module.SoulLikeProject.3.cpp.obj": [
 			"WarriorHeroAnimInstance.cpp.obj",
 			"WarriorHeroLinkedLayer.cpp.obj",
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj"
-		],
-		"Module.SoulLikeProject.3.cpp.obj": [
+			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
@@ -86,6 +87,7 @@
 			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"WarriorGameModeBase.cpp.obj",
+			"WarriorSurvivalGameMode.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
 			"WarriorPickUpBase.cpp.obj",
@@ -99,9 +101,7 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
-			"WarriorSurvivalGameMode.cpp.obj"
+			"SoulLikeProject.cpp.obj"
 		]
 	}
 }
