@@ -48,11 +48,14 @@
 			"WarriorProjectileBase.gen.cpp.obj",
 			"WarriorStoneBase.gen.cpp.obj",
 			"WarriorStructTypes.gen.cpp.obj",
+			"WarriorSurvivalGameMode.gen.cpp.obj",
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorWidgetBase.gen.cpp.obj",
+			"HeroGameplayAbility_PickUpStones.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
+			"WarriorHeroGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
@@ -65,13 +68,16 @@
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
+			"WarriorEnemyCharacter.cpp.obj"
+		],
+		"Module.SoulLikeProject.3.cpp.obj": [
+			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
+			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
 			"WarriorAIController.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -83,23 +89,19 @@
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
 			"WarriorPickUpBase.cpp.obj",
+			"WarriorStoneBase.cpp.obj",
 			"WarriorProjectileBase.cpp.obj",
-			"HeroGameplayAbility_PickUpStones.cpp.obj",
-			"WarriorHeroGameplayAbility.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj",
-			"HeroUIComponent.cpp.obj",
-			"WarriorStoneBase.cpp.obj"
-		],
-		"Module.SoulLikeProject.3.cpp.obj": [
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorGameplayTags.cpp.obj"
+			"HeroCombatComponent.cpp.obj",
+			"WarriorSurvivalGameMode.cpp.obj"
 		]
 	}
 }

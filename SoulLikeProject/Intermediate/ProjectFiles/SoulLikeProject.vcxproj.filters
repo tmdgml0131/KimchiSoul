@@ -205,6 +205,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorGameModeBase.cpp">
       <Filter>Source\SoulLikeProject\private\GameMode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorSurvivalGameMode.cpp">
+      <Filter>Source\SoulLikeProject\private\GameMode</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Interfaces">
       <UniqueIdentifier>{980D8C1A-CC59-3C35-AF8B-B4B7492DDEB9}</UniqueIdentifier>
     </Filter>
@@ -416,6 +419,9 @@
       <UniqueIdentifier>{C07481DC-A6BA-38D8-A8C1-9B37D350080A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorGameModeBase.h">
+      <Filter>Source\SoulLikeProject\public\GameMode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorSurvivalGameMode.h">
       <Filter>Source\SoulLikeProject\public\GameMode</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Interfaces">

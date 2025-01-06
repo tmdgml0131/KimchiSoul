@@ -372,6 +372,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorGameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\GameMode\WarriorSurvivalGameMode.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Interfaces\PawnCombatInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -441,6 +444,7 @@
     <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_HeroStartUpData.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\DataAssets\StartUpData\DataAsset_StartUpDataBase.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorGameModeBase.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\GameMode\WarriorSurvivalGameMode.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Interfaces\PawnUIInterface.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\WarriorProjectileBase.h"/>
