@@ -6,6 +6,7 @@
 #include "GenericTeamAgentInterface.h"
 #include "WarriorGameplayTags.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
+#include "GameMode/WarriorGameModeBase.h"
 #include "Interfaces/PawnCombatInterface.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "WarriorTypes/WarriorCountDownAction.h"
@@ -178,4 +179,31 @@ void UWarriorFunctionLibrary::CountDown(const UObject* WorldContextObject, float
 			FoundAction->CancelAction();
 		}
 	}
+}
+
+int32 UWarriorFunctionLibrary::GetGameDifficulty(UWorld* InWorldData, bool bIsPlayer)
+{
+	if(!InWorldData) return 1;
+	
+	int32 CurrentLevel = 0;
+	if(AWarriorGameModeBase* BaseGameMode = InWorldData->GetAuthGameMode<AWarriorGameModeBase>())
+	{
+		switch (BaseGameMode->GetCurrentGameDifficulty())
+		{
+		case EWarriorGameDifficulty::Easy:
+			CurrentLevel = bIsPlayer? 4 : 1;
+			break;
+		case EWarriorGameDifficulty::Normal:
+			CurrentLevel = bIsPlayer? 3 : 2;
+			break;
+		case EWarriorGameDifficulty::Hard:
+			CurrentLevel = bIsPlayer? 2 : 3;
+			break;
+		case EWarriorGameDifficulty::VeryHard:
+			CurrentLevel = bIsPlayer? 1 : 4;
+			break;
+		}
+	}
+
+	return CurrentLevel;
 }

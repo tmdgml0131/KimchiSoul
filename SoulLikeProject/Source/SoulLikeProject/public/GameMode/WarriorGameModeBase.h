@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "WarriorTypes/WarriorEnumTypes.h"
 #include "WarriorGameModeBase.generated.h"
 
 /**
@@ -16,4 +17,11 @@ class SOULLIKEPROJECT_API AWarriorGameModeBase : public AGameModeBase
 
 public:
 	AWarriorGameModeBase();
+
+protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Game Settings")
+	EWarriorGameDifficulty CurrentGameDifficulty;
+
+public:
+	FORCEINLINE EWarriorGameDifficulty GetCurrentGameDifficulty() const { return CurrentGameDifficulty; }
 };

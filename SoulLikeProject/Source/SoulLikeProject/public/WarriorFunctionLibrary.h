@@ -61,4 +61,7 @@ public:
 	static void CountDown(const UObject* WorldContextObject, float TotalTime, float UpdateInterval,
 		float& OutRemainingTime, EWarriorCountDownActionInput CountDownInput,
 		UPARAM(DisplayName = "Output") EWarriorCountDownActionOutput& CountDownOutput, FLatentActionInfo LatentInfo);
+
+	UFUNCTION(BlueprintCallable, Category = "Warrior|FunctionLibrary")
+	static int32 GetGameDifficulty(UWorld* InWorldData, bool bIsPlayer);
 };

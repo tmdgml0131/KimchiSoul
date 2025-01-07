@@ -18,6 +18,7 @@
 #include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 #include "Components/Combat/HeroCombatComponent.h"
 #include "Components/UI/HeroUIComponent.h"
+#include "GameMode/WarriorGameModeBase.h"
 
 #define PARAGON
 
@@ -118,7 +119,8 @@ void AWarriorHeroCharacter::PossessedBy(AController* NewController)
 	{
 		if(UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
 		{
-			LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent);
+			int32 AbilityApplyLevel = UWarriorFunctionLibrary::GetGameDifficulty(GetWorld(), true);
+			LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent, AbilityApplyLevel);
 		}
 	}
 }

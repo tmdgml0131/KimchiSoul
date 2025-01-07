@@ -116,7 +116,8 @@ void AWarriorEnemyCharacter::InitEnemyStartUpData()
 			{
 				if(UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.Get())
 				{
-					LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent);
+					int32 AbilityApplyLevel = UWarriorFunctionLibrary::GetGameDifficulty(GetWorld(), false);
+					LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent, AbilityApplyLevel);
 				}
 			}
 		)

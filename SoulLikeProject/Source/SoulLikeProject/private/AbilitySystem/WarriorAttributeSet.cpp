@@ -79,7 +79,7 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 		PawnUIComponent->OnCurrentHealthChanged.Broadcast(GetCurrentHealth()/GetMaxHealth());
 		
 		// Character Death
-		if(GetCurrentHealth() <= 0.f)
+		if(FMath::IsNearlyZero(GetCurrentHealth() ))
 		{
 			UWarriorFunctionLibrary::AddGameplayTagToActorIfNone(Data.Target.GetAvatarActor(), WarriorGameplayTags::Shared_Status_Dead);
 		}
