@@ -86,8 +86,6 @@
 			"DataAsset_EnemyStartUpData.cpp.obj",
 			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
-			"WarriorGameModeBase.cpp.obj",
-			"WarriorSurvivalGameMode.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
 			"WarriorPickUpBase.cpp.obj",
@@ -101,7 +99,9 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj"
+			"SoulLikeProject.cpp.obj",
+			"WarriorGameModeBase.cpp.obj",
+			"WarriorSurvivalGameMode.cpp.obj"
 		]
 	}
 }
