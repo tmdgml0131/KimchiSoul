@@ -243,7 +243,7 @@ void UWarriorFunctionLibrary::ToggleInputMode(EWarriorInputMode InInputMode, con
 		PlayerController->SetInputMode(GameOnlyMode);
 		PlayerController->bShowMouseCursor = false;
 		break;
-	case EWarriorInputMode::UIOnly:
+	case EWarriorInputMode::UIOnly: 
 		PlayerController->SetInputMode(UIOnlyMode);
 		PlayerController->bShowMouseCursor = true;
 		break;
