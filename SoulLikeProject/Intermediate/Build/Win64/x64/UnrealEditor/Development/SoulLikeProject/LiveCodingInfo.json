@@ -51,10 +51,10 @@
 			"WarriorStoneBase.gen.cpp.obj",
 			"WarriorStructTypes.gen.cpp.obj",
 			"WarriorSurvivalGameMode.gen.cpp.obj",
-			"WarriorWeaponBase.gen.cpp.obj",
-			"WarriorWidgetBase.gen.cpp.obj"
+			"WarriorWeaponBase.gen.cpp.obj"
 		],
 		"Module.SoulLikeProject.3.cpp.obj": [
+			"WarriorWidgetBase.gen.cpp.obj",
 			"HeroGameplayAbility_PickUpStones.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
@@ -89,7 +89,6 @@
 			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"WarriorGameModeBase.cpp.obj",
-			"WarriorSurvivalGameMode.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
 			"WarriorPickUpBase.cpp.obj",
@@ -97,15 +96,16 @@
 			"WarriorProjectileBase.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
-			"WarriorGameInstance.cpp.obj",
+			"WarriorSaveGame.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorSaveGame.cpp.obj"
+			"WarriorSurvivalGameMode.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameInstance.cpp.obj"
 		]
 	}
 }
