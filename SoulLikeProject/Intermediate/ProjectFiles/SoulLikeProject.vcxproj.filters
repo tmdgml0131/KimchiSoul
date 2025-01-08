@@ -244,6 +244,12 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Items\Weapons\WarriorWeaponBase.cpp">
       <Filter>Source\SoulLikeProject\private\Items\Weapons</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\SaveGame">
+      <UniqueIdentifier>{E5279CE1-F5E8-3276-974B-0FDCF6A36C35}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\SaveGame\WarriorSaveGame.cpp">
+      <Filter>Source\SoulLikeProject\private\SaveGame</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\WarriorTypes">
       <UniqueIdentifier>{86777212-FB9D-389D-AC33-148AF03F8745}</UniqueIdentifier>
     </Filter>
@@ -462,6 +468,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Items\Weapons\WarriorWeaponBase.h">
       <Filter>Source\SoulLikeProject\public\Items\Weapons</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\SaveGame">
+      <UniqueIdentifier>{C755D4BA-4915-3A20-A578-8B5F54CA136E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\SaveGame\WarriorSaveGame.h">
+      <Filter>Source\SoulLikeProject\public\SaveGame</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\WarriorTypes">
       <UniqueIdentifier>{0790AFCC-802D-35CC-8D3F-7A5C8372AB52}</UniqueIdentifier>

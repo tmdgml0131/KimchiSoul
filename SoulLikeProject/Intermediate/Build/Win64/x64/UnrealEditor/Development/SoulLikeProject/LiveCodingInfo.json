@@ -47,6 +47,7 @@
 			"WarriorInputComponent.gen.cpp.obj",
 			"WarriorPickUpBase.gen.cpp.obj",
 			"WarriorProjectileBase.gen.cpp.obj",
+			"WarriorSaveGame.gen.cpp.obj",
 			"WarriorStoneBase.gen.cpp.obj",
 			"WarriorStructTypes.gen.cpp.obj",
 			"WarriorSurvivalGameMode.gen.cpp.obj",
@@ -96,14 +97,15 @@
 			"WarriorProjectileBase.cpp.obj",
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
-			"WarriorCountDownAction.cpp.obj",
-			"WarriorStructTypes.cpp.obj",
-			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj",
 			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameInstance.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
-			"WarriorEnumTypes.cpp.obj"
+			"WarriorCountDownAction.cpp.obj",
+			"WarriorEnumTypes.cpp.obj",
+			"WarriorStructTypes.cpp.obj",
+			"WarriorWidgetBase.cpp.obj",
+			"SoulLikeProject.cpp.obj",
+			"WarriorSaveGame.cpp.obj"
 		]
 	}
 }
