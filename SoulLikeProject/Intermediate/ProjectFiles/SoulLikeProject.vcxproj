@@ -267,6 +267,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorFunctionLibrary.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorGameInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorGameplayTags.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -409,6 +412,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorFunctionLibrary.h"/>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameInstance.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\AbilitySystem\WarriorAttributeSet.h"/>

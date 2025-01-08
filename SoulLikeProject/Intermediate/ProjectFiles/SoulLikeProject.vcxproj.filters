@@ -49,6 +49,9 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorFunctionLibrary.cpp">
       <Filter>Source\SoulLikeProject\private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorGameInstance.cpp">
+      <Filter>Source\SoulLikeProject\private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SoulLikeProject\private\WarriorGameplayTags.cpp">
       <Filter>Source\SoulLikeProject\private</Filter>
     </ClCompile>
@@ -263,6 +266,9 @@
       <UniqueIdentifier>{EFB0BE60-5112-3AB0-AEEB-D0EEDE662B45}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorFunctionLibrary.h">
+      <Filter>Source\SoulLikeProject\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameInstance.h">
       <Filter>Source\SoulLikeProject\public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\WarriorGameplayTags.h">

@@ -10,6 +10,7 @@
 //////////////////////////////////////////
 #include "WarriorFunctionLibrary.generated.h"
 
+class UWarriorGameInstance;
 struct FScalableFloat;
 class UPawnCombatComponent;
 struct FGameplayTag;
@@ -64,4 +65,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Warrior|FunctionLibrary")
 	static int32 GetGameDifficulty(UWorld* InWorldData, bool bIsPlayer);
+
+	UFUNCTION(BlueprintPure, Category = "Warrior|FunctionLibrary", meta = (WorldContext = "WorldContextObject"))
+	static UWarriorGameInstance* GetWarriorGameInstance(const UObject* WorldContextObject);
+
+	UFUNCTION(BlueprintCallable, Category = "Warrior|FunctionLibrary", meta = (WorldContext = "WorldContextObject"))
+	static void ToggleInputMode(EWarriorInputMode InInputMode, const UObject* WorldContextObject);
 };
