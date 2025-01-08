@@ -6,6 +6,7 @@
 #include "Character/WarriorEnemyCharacter.h"
 #include "NavigationSystem.h"
 #include "AbilitySystemComponent.h"
+#include "Components/CapsuleComponent.h"
 
 UAbilityTask_WaitSpawnEnemies* UAbilityTask_WaitSpawnEnemies::WaitSpawnEnemies(UGameplayAbility* OwningAbility,
                                                                                FGameplayTag EventTag, TSoftClassPtr<AWarriorEnemyCharacter> SoftEnemyClassToSpawn, int32 NumToSpawn,
@@ -84,6 +85,7 @@ void UAbilityTask_WaitSpawnEnemies::OnEnemyClassLoaded()
 		AWarriorEnemyCharacter* SpawnedEnemy = World->SpawnActor<AWarriorEnemyCharacter>(LoadedClass, RandomLocation, SpawnFacingRotation, SpawnParam);
 		if(SpawnedEnemy)
 		{
+			SpawnedEnemy->GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			SpawnedEnemies.Add(SpawnedEnemy);
 		}
 	}

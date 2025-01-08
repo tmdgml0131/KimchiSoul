@@ -61,7 +61,6 @@
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
-			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
@@ -72,10 +71,8 @@
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
@@ -97,15 +94,18 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorSaveGame.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorGameInstance.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"WarriorSurvivalGameMode.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
-			"WarriorGameInstance.cpp.obj"
+			"AbilityTask_WaitSpawnEnemies.cpp.obj",
+			"WarriorEnemyCharacter.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
+			"WarriorSurvivalGameMode.cpp.obj"
 		]
 	}
 }

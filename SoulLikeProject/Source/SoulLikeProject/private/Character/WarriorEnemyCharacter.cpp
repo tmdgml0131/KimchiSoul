@@ -4,7 +4,9 @@
 #include "Character/WarriorEnemyCharacter.h"
 
 #include "WarriorFunctionLibrary.h"
+#include "WarriorGameplayTags.h"
 #include "Components/BoxComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "Components/WidgetComponent.h"
 #include "Engine/AssetManager.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -73,7 +75,7 @@ void AWarriorEnemyCharacter::BeginPlay()
 void AWarriorEnemyCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
-
+	
 	InitEnemyStartUpData();
 }
 

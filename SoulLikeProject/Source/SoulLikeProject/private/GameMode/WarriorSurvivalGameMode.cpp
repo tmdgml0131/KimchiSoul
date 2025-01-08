@@ -6,6 +6,7 @@
 #include "NavigationSystem.h"
 #include "WarriorFunctionLibrary.h"
 #include "Character/WarriorEnemyCharacter.h"
+#include "Components/CapsuleComponent.h"
 #include "Engine/AssetManager.h"
 #include "Engine/TargetPoint.h"
 #include "Kismet/GameplayStatics.h"

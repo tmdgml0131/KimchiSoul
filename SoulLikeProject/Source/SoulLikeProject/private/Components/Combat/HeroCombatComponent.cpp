@@ -30,7 +30,7 @@ void UHeroCombatComponent::OnHitTargetActor(AActor* HitActor)
 	if(OverlappedActors.Contains(HitActor)) return;
 
 	OverlappedActors.AddUnique(HitActor);
-
+	
 	FGameplayEventData Data;
 	Data.Instigator = GetOwningPawn();
 	Data.Target = HitActor;
