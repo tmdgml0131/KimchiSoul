@@ -155,7 +155,7 @@ int32 AWarriorSurvivalGameMode::TrySpawnWaveEnemies()
 			// Compute actual spawn location and give it an offset value
 			FVector RandomLocation;
 			UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(this, SpawnOrigin, RandomLocation, 400.f);
-			RandomLocation += FVector(0.f, 0.f, 150.f);
+			RandomLocation += FVector(0.f, 0.f, 450.f);
 
 			// Spawn enemy
 			AWarriorEnemyCharacter* SpawnedEnemy = GetWorld()->SpawnActor<AWarriorEnemyCharacter>(LoadedEnemyClass, RandomLocation, SpawnRotation, SpawnParam);

@@ -71,8 +71,10 @@
 			"WarriorBaseAnimInstance.cpp.obj",
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
+			"WarriorEnemyCharacter.cpp.obj",
 			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
@@ -103,8 +105,6 @@
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
-			"WarriorEnemyCharacter.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
 			"WarriorSurvivalGameMode.cpp.obj"
 		]
 	}

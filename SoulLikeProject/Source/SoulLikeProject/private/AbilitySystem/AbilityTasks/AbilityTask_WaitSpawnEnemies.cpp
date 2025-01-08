@@ -79,13 +79,12 @@ void UAbilityTask_WaitSpawnEnemies::OnEnemyClassLoaded()
 	{
 		FVector RandomLocation;
 		UNavigationSystemV1::K2_GetRandomReachablePointInRadius(this, CachedSpawnOrigin, RandomLocation, CachedRandomSpawnRadius);
-		RandomLocation += FVector(0.f, 0.f, 150.f);
+		RandomLocation += FVector(0.f, 0.f, 450.f);
 		const FRotator SpawnFacingRotation = AbilitySystemComponent->GetAvatarActor()->GetActorForwardVector().ToOrientationRotator();
 
 		AWarriorEnemyCharacter* SpawnedEnemy = World->SpawnActor<AWarriorEnemyCharacter>(LoadedClass, RandomLocation, SpawnFacingRotation, SpawnParam);
 		if(SpawnedEnemy)
 		{
-			SpawnedEnemy->GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			SpawnedEnemies.Add(SpawnedEnemy);
 		}
 	}
