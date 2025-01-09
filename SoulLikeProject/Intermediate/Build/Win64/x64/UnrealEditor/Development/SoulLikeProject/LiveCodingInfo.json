@@ -61,6 +61,7 @@
 			"WarriorGameplayAbility.cpp.obj",
 			"WarriorHeroGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
+			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"WarriorAbilitySystemComponent.cpp.obj",
 			"WarriorAttributeSet.cpp.obj",
@@ -88,6 +89,7 @@
 			"DataAsset_HeroStartUpData.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
 			"WarriorGameModeBase.cpp.obj",
+			"WarriorSurvivalGameMode.cpp.obj",
 			"PawnCombatInterface.cpp.obj",
 			"PawnUIInterface.cpp.obj",
 			"WarriorPickUpBase.cpp.obj",
@@ -103,9 +105,7 @@
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj",
-			"AbilityTask_WaitSpawnEnemies.cpp.obj",
-			"WarriorSurvivalGameMode.cpp.obj"
+			"SoulLikeProject.cpp.obj"
 		]
 	}
 }
