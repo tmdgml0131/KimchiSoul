@@ -239,6 +239,8 @@ void UWarriorFunctionLibrary::ToggleInputMode(EWarriorInputMode InInputMode, con
 
 	FInputModeGameOnly GameOnlyMode;
 	FInputModeUIOnly UIOnlyMode;
+	FInputModeGameAndUI GameAndUIMode;
+	
 	switch (InInputMode)
 	{
 	case EWarriorInputMode::GameOnly:
@@ -247,6 +249,10 @@ void UWarriorFunctionLibrary::ToggleInputMode(EWarriorInputMode InInputMode, con
 		break;
 	case EWarriorInputMode::UIOnly: 
 		PlayerController->SetInputMode(UIOnlyMode);
+		PlayerController->bShowMouseCursor = true;
+		break;
+	case EWarriorInputMode::GameAndUI: 
+		PlayerController->SetInputMode(GameAndUIMode);
 		PlayerController->bShowMouseCursor = true;
 		break;
 	default:
@@ -277,3 +283,4 @@ bool UWarriorFunctionLibrary::TryLoadSavedGameDifficulty(EWarriorGameDifficulty&
 	}
 	return false;
 }
+

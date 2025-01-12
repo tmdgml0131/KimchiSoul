@@ -33,7 +33,7 @@ UHeroCombatComponent* UWarriorHeroGameplayAbility::GetHeroCombatComponentFromAct
 	return GetHeroCharacterFromActorInfo()->GetHeroCombatComponent();
 }
 
-UHeroUIComponent* UWarriorHeroGameplayAbility::GetHeroUICOmponentFromActorInfo()
+UHeroUIComponent* UWarriorHeroGameplayAbility::GetHeroUIComponentFromActorInfo()
 {
 	return GetHeroCharacterFromActorInfo()->GetHeroUIComponent();
 }

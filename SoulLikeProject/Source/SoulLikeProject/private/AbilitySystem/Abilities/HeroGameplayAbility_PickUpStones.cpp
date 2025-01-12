@@ -12,7 +12,7 @@ void UHeroGameplayAbility_PickUpStones::ActivateAbility(const FGameplayAbilitySp
                                                         const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo,
                                                         const FGameplayEventData* TriggerEventData)
 {
-	GetHeroUICOmponentFromActorInfo()->OnStoneInteracted.Broadcast(true);
+	GetHeroUIComponentFromActorInfo()->OnStoneInteracted.Broadcast(true);
 	
 	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
 }
@@ -21,7 +21,7 @@ void UHeroGameplayAbility_PickUpStones::EndAbility(const FGameplayAbilitySpecHan
 	const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo,
 	bool bReplicateEndAbility, bool bWasCancelled)
 {
-	GetHeroUICOmponentFromActorInfo()->OnStoneInteracted.Broadcast(false);
+	GetHeroUIComponentFromActorInfo()->OnStoneInteracted.Broadcast(false);
 	Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);
 }
 

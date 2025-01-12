@@ -16,6 +16,7 @@
 			"HeroCombatComponent.gen.cpp.obj",
 			"HeroGameplayAbility_PickUpStones.gen.cpp.obj",
 			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
+			"HeroMoneyComponent.gen.cpp.obj",
 			"HeroUIComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
 			"PawnCombatInterface.gen.cpp.obj",
@@ -30,10 +31,10 @@
 			"WarriorBaseCharacter.gen.cpp.obj",
 			"WarriorCharacterAnimInstance.gen.cpp.obj",
 			"WarriorEnemyCharacter.gen.cpp.obj",
-			"WarriorEnemyGameplayAbility.gen.cpp.obj",
-			"WarriorEnumTypes.gen.cpp.obj"
+			"WarriorEnemyGameplayAbility.gen.cpp.obj"
 		],
 		"Module.SoulLikeProject.2.cpp.obj": [
+			"WarriorEnumTypes.gen.cpp.obj",
 			"WarriorFunctionLibrary.gen.cpp.obj",
 			"WarriorGameInstance.gen.cpp.obj",
 			"WarriorGameModeBase.gen.cpp.obj",
@@ -50,16 +51,14 @@
 			"WarriorSaveGame.gen.cpp.obj",
 			"WarriorStoneBase.gen.cpp.obj",
 			"WarriorStructTypes.gen.cpp.obj",
-			"WarriorSurvivalGameMode.gen.cpp.obj",
-			"WarriorWeaponBase.gen.cpp.obj"
+			"WarriorSurvivalGameMode.gen.cpp.obj"
 		],
 		"Module.SoulLikeProject.3.cpp.obj": [
+			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorWidgetBase.gen.cpp.obj",
-			"HeroGameplayAbility_PickUpStones.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
 			"WarriorGameplayAbility.cpp.obj",
-			"WarriorHeroGameplayAbility.cpp.obj",
 			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
@@ -73,14 +72,12 @@
 			"WarriorCharacterAnimInstance.cpp.obj",
 			"WarriorBaseCharacter.cpp.obj",
 			"WarriorEnemyCharacter.cpp.obj",
-			"WarriorHeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"WarriorInputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
-			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
 			"WarriorAIController.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -98,14 +95,19 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorSaveGame.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameInstance.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
-			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj"
+			"SoulLikeProject.cpp.obj",
+			"HeroGameplayAbility_PickUpStones.cpp.obj",
+			"WarriorHeroGameplayAbility.cpp.obj",
+			"WarriorHeroCharacter.cpp.obj",
+			"HeroMoneyComponent.cpp.obj",
+			"HeroUIComponent.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj",
+			"WarriorEnumTypes.cpp.obj"
 		]
 	}
 }

@@ -49,5 +49,6 @@ UENUM(BlueprintType)
 enum class EWarriorInputMode : uint8
 {
 	GameOnly,
-	UIOnly
+	UIOnly,
+	GameAndUI
 };

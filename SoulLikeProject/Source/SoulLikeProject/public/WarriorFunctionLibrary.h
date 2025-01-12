@@ -15,6 +15,7 @@ struct FScalableFloat;
 class UPawnCombatComponent;
 struct FGameplayTag;
 class UWarriorAbilitySystemComponent;
+class AWarriorHeroCharacter;
 
 /**
  * 

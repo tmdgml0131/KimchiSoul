@@ -17,6 +17,7 @@
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 #include "Components/Combat/HeroCombatComponent.h"
+#include "Components/Money/HeroMoneyComponent.h"
 #include "Components/UI/HeroUIComponent.h"
 #include "GameMode/WarriorGameModeBase.h"
 
@@ -52,7 +53,8 @@ AWarriorHeroCharacter::AWarriorHeroCharacter()
 
 	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>(TEXT("HeroCombatComponent"));
 	HeroUIComponent = CreateDefaultSubobject<UHeroUIComponent>(TEXT("HeroUIComponent"));
-	
+	HeroMoneyComponent = CreateDefaultSubobject<UHeroMoneyComponent>(TEXT("HeroMoneyComponent"));
+	HeroMoneyComponent->WarriorHeroCharacter = this;
 }
 
 UPawnCombatComponent* AWarriorHeroCharacter::GetPawnCombatComponent() const
@@ -68,6 +70,11 @@ UPawnUIComponent* AWarriorHeroCharacter::GetPawnUIComponent() const
 UHeroUIComponent* AWarriorHeroCharacter::GetHeroUIComponent() const
 {
 	return HeroUIComponent;
+}
+
+UHeroMoneyComponent* AWarriorHeroCharacter::GetHeroMoneyComponent() const
+{
+	return HeroMoneyComponent;
 }
 
 void AWarriorHeroCharacter::BeginPlay()

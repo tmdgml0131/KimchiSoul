@@ -8,6 +8,7 @@
 //////////////////////////////////
 #include "WarriorHeroCharacter.generated.h"
 
+class UHeroMoneyComponent;
 class UHeroUIComponent;
 struct FInputActionValue;
 class UHeroCombatComponent;
@@ -30,6 +31,7 @@ public:
 	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
 	virtual UPawnUIComponent* GetPawnUIComponent() const override;
 	virtual UHeroUIComponent* GetHeroUIComponent() const override;
+	virtual UHeroMoneyComponent* GetHeroMoneyComponent() const;
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
@@ -50,6 +52,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UI", meta = (AllowPrivateAccess = "true"))
 	UHeroUIComponent* HeroUIComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Money", meta = (AllowPrivateAccess = "true"))
+	UHeroMoneyComponent* HeroMoneyComponent;
 	
 #pragma endregion
 	
