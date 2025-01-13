@@ -160,6 +160,12 @@
     <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Input\WarriorInputComponent.cpp">
       <Filter>Source\SoulLikeProject\private\Components\Input</Filter>
     </ClCompile>
+    <Filter Include="Source\SoulLikeProject\private\Components\Money">
+      <UniqueIdentifier>{198A55A4-6748-30B8-BBA5-BDB1023003B0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SoulLikeProject\private\Components\Money\HeroMoneyComponent.cpp">
+      <Filter>Source\SoulLikeProject\private\Components\Money</Filter>
+    </ClCompile>
     <Filter Include="Source\SoulLikeProject\private\Components\UI">
       <UniqueIdentifier>{67697F76-FD18-3FD4-955B-D5883D023EEF}</UniqueIdentifier>
     </Filter>
@@ -384,6 +390,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Input\WarriorInputComponent.h">
       <Filter>Source\SoulLikeProject\public\Components\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\SoulLikeProject\public\Components\Money">
+      <UniqueIdentifier>{2F31747A-163C-3F0B-9279-654F483B9216}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SoulLikeProject\public\Components\Money\HeroMoneyComponent.h">
+      <Filter>Source\SoulLikeProject\public\Components\Money</Filter>
     </ClInclude>
     <Filter Include="Source\SoulLikeProject\public\Components\UI">
       <UniqueIdentifier>{82732726-BFE8-35D4-9EBA-8F4CFF67F4FA}</UniqueIdentifier>
