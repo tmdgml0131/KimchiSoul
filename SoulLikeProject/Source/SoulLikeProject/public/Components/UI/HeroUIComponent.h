@@ -12,6 +12,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEquippedWeaponChangedDelegate, TS
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnAbilityIconSlotUpdatedDelegate, FGameplayTag, AbilityInputTag, TSoftObjectPtr<UMaterialInterface>, SoftAbilityIconMaterial);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnAbilityCooldownBeginDelegate, FGameplayTag, AbilityInputTag, float, TotalCooldownTime, float, RemainingCooldownTime);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStoneInteractedDelegate, bool, bShouldDisplayInputKey);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnItemInteractedDelegate, bool, bShouldDisplayInputKey);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHeroMoneyAmountChangedDelegate, int32, MoneyAmount);
 
 /**
@@ -37,6 +38,9 @@ public:
 
 	UPROPERTY(BlueprintCallable, BlueprintAssignable)
 	FOnStoneInteractedDelegate OnStoneInteracted;
+
+	UPROPERTY(BlueprintCallable, BlueprintAssignable)
+	FOnItemInteractedDelegate OnItemInteracted;
 	
 	UPROPERTY(BlueprintCallable, BlueprintAssignable)
 	FOnHeroMoneyAmountChangedDelegate OnHeroMoneyAmountChanged;
