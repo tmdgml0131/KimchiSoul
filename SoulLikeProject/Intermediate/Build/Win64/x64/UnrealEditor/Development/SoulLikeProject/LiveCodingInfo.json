@@ -100,14 +100,14 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorSaveGame.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameInstance.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
-			"SoulLikeProject.cpp.obj"
+			"SoulLikeProject.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj"
 		]
 	}
 }
