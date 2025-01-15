@@ -18,11 +18,14 @@ UWarriorAbilitySystemComponent* UWarriorFunctionLibrary::NativeGetWarriorASCFrom
 {
 	if(!InActor) return nullptr;
 
-	return CastChecked<UWarriorAbilitySystemComponent>(UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(InActor));
+	UAbilitySystemComponent* AbilitySystemComponent = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(InActor);
+	return AbilitySystemComponent? CastChecked<UWarriorAbilitySystemComponent>(AbilitySystemComponent) : nullptr;
 }
 
 void UWarriorFunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGameplayTag TagToAdd)
 {
+	if(!InActor || !TagToAdd.IsValid()) return;
+	
 	UWarriorAbilitySystemComponent* ASC = NativeGetWarriorASCFromActor(InActor);
 	
 	if(!ASC->HasMatchingGameplayTag(TagToAdd))
@@ -43,14 +46,23 @@ void UWarriorFunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor,
 
 bool UWarriorFunctionLibrary::NativeDoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck)
 {
-	UWarriorAbilitySystemComponent* ASC = NativeGetWarriorASCFromActor(InActor);
+	if(!InActor || !TagToCheck.IsValid()) return false;
 
-	return ASC->HasMatchingGameplayTag(TagToCheck);
+	if(UWarriorAbilitySystemComponent* ASC = NativeGetWarriorASCFromActor(InActor))
+	{
+		return ASC->HasMatchingGameplayTag(TagToCheck);
+	}
+	return false;
 }
 
 void UWarriorFunctionLibrary::BP_DoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck,
 	EWarriorConfirmType& OutConfirmType)
 {
+	if(!InActor || !TagToCheck.IsValid())
+	{
+		OutConfirmType = EWarriorConfirmType::NO;
+		return;
+	}
 	OutConfirmType = NativeDoesActorHaveTag(InActor, TagToCheck)? EWarriorConfirmType::YES : EWarriorConfirmType::NO; 
 }
 

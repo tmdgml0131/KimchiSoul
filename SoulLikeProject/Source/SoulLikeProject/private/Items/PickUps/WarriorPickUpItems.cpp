@@ -7,6 +7,17 @@
 #include "WarriorGameplayTags.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "Character/WarriorHeroCharacter.h"
+#include "Components/SphereComponent.h"
+
+AWarriorPickUpItems::AWarriorPickUpItems()
+{
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = false;
+
+	ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ItemMesh"));
+	SetRootComponent(ItemMesh);
+	PickUpCollisionSphere->SetupAttachment(GetRootComponent());
+}
 
 void AWarriorPickUpItems::PickUp(UWarriorAbilitySystemComponent* AbilitySystemComponent, int32 ApplyLevel)
 {
@@ -25,4 +36,9 @@ void AWarriorPickUpItems::OnPickUpCollisionSphereBeginOverlap(UPrimitiveComponen
 	{
 		HeroCharacter->GetWarriorAbilitySystemComponent()->TryActivateAbilityByTag(WarriorGameplayTags::Player_Ability_PickUp_Items);
 	}
+}
+
+void AWarriorPickUpItems::BP_OnItemAddedToInventory()
+{
+	BP_OnItemPickedUp();
 }

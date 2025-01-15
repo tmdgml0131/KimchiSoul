@@ -84,6 +84,7 @@
 			"HeroMoneyComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
+			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
 			"WarriorAIController.cpp.obj",
 			"WarriorHeroController.cpp.obj",
@@ -101,17 +102,16 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorSaveGame.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameInstance.cpp.obj",
+			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
 			"WarriorEnumTypes.cpp.obj",
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
 			"HeroGameplayAbility_PickUpItems.cpp.obj",
-			"HeroUIComponent.cpp.obj",
 			"WarriorPickUpItems.cpp.obj",
-			"WarriorGameplayTags.cpp.obj"
+			"WarriorFunctionLibrary.cpp.obj"
 		]
 	}
 }
