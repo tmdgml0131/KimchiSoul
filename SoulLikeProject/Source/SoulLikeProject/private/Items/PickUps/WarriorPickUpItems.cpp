@@ -21,8 +21,11 @@ AWarriorPickUpItems::AWarriorPickUpItems()
 
 void AWarriorPickUpItems::PickUp(UWarriorAbilitySystemComponent* AbilitySystemComponent, int32 ApplyLevel)
 {
-	UE_LOG(LogTemp, Error, TEXT("Forgot to Assign ItemGameplayEffectClass!"));
-	if(!ItemGameplayEffectClass) return;
+	if(!ItemGameplayEffectClass)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Forgot to Assign ItemGameplayEffectClass!"));
+		return;
+	}
 	
 	UGameplayEffect* EffectCDO = ItemGameplayEffectClass->GetDefaultObject<UGameplayEffect>();
 	AbilitySystemComponent->ApplyGameplayEffectToSelf(EffectCDO, ApplyLevel, AbilitySystemComponent->MakeEffectContext());

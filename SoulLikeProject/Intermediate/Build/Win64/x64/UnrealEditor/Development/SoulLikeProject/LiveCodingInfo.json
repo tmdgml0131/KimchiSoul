@@ -17,6 +17,7 @@
 			"HeroGameplayAbility_PickUpItems.gen.cpp.obj",
 			"HeroGameplayAbility_PickUpStones.gen.cpp.obj",
 			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
+			"HeroInventoryComponent.gen.cpp.obj",
 			"HeroMoneyComponent.gen.cpp.obj",
 			"HeroUIComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
@@ -58,6 +59,7 @@
 		"Module.SoulLikeProject.3.cpp.obj": [
 			"WarriorWeaponBase.gen.cpp.obj",
 			"WarriorWidgetBase.gen.cpp.obj",
+			"HeroGameplayAbility_PickUpItems.cpp.obj",
 			"HeroGameplayAbility_PickUpStones.cpp.obj",
 			"HeroGameplayAbility_TargetLock.cpp.obj",
 			"WarriorEnemyGameplayAbility.cpp.obj",
@@ -102,6 +104,7 @@
 			"WarriorHeroWeapon.cpp.obj",
 			"WarriorWeaponBase.cpp.obj",
 			"WarriorSaveGame.cpp.obj",
+			"WarriorFunctionLibrary.cpp.obj",
 			"WarriorGameInstance.cpp.obj",
 			"WarriorGameplayTags.cpp.obj",
 			"WarriorCountDownAction.cpp.obj",
@@ -109,9 +112,8 @@
 			"WarriorStructTypes.cpp.obj",
 			"WarriorWidgetBase.cpp.obj",
 			"SoulLikeProject.cpp.obj",
-			"HeroGameplayAbility_PickUpItems.cpp.obj",
-			"WarriorPickUpItems.cpp.obj",
-			"WarriorFunctionLibrary.cpp.obj"
+			"HeroInventoryComponent.cpp.obj",
+			"WarriorPickUpItems.cpp.obj"
 		]
 	}
 }

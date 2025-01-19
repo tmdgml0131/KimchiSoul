@@ -27,7 +27,7 @@ public:
 protected:
 	virtual void OnPickUpCollisionSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) override;
 	
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "On Item Picked Up"))
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "On Item Added to Inventory"))
 	void BP_OnItemAddedToInventory();
 	
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "On Item Picked Up"))
